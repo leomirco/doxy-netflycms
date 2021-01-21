@@ -19,15 +19,3 @@ layout: default
     {% include support_area.html %}
     {% include footer_top_area.html %}
     {% include footer.html %}
-    <!-- Netfly Identity widget -->
-<script>
-	if (window.netlifyIdentity) {
-	  window.netlifyIdentity.on("init", user => {
-		if (!user) {
-		  window.netlifyIdentity.on("login", () => {
-			document.location.href = "/admin/";
-		  });
-		}
-	  });
-	}
-  </script>

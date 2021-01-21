@@ -39,6 +39,18 @@
 
 <body>
    {{ content }}
+    <!-- Netfly Identity widget -->
+<script>
+	if (window.netlifyIdentity) {
+	  window.netlifyIdentity.on("init", user => {
+		if (!user) {
+		  window.netlifyIdentity.on("login", () => {
+			document.location.href = "/admin/";
+		  });
+		}
+	  });
+	}
+  </script>
     <!-- Add Javascript File -->
    <script src="{{ '/assets/js/build.min.js' | relative_url }}"></script>
    		<script>
