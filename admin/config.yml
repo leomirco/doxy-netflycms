@@ -2,10 +2,9 @@
 
 backend:
   name: git-gateway
-  # when using the default proxy server port
-  # lingua GUI
-  #locale: 'it'
-  local_backend: true
+
+# when using the default proxy server port
+local_backend: true
   #branch: master # Branch to update (optional; defaults to master)
 # This line should *not* be indented
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
@@ -24,7 +23,6 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
- 
   - name: "config"
     label: "Config"
     editor:
