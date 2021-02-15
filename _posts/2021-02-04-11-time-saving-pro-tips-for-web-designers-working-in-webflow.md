@@ -4,17 +4,15 @@ excerpt: magna vivamus varius. Faucibus vestibulum faucibus elementum vulputate
   elit feugiat nulla, vehicula
 layout: post
 title: 11 time-saving pro tips for web designers working in Webflow
-date: 2018-12-01 18:14:30 +0600
+date: 2021-02-04T11:54:38.745Z
 featured: true
 autore: Ilenia
 tags:
   - technology
   - education
 post_image: https://cdn.stocksnap.io/img-thumbs/960w/VJM1ZWXLPY.jpg
-categories: getting_started
+categories: chatbots
 comment: true
-
-
 ---
 Questa è una prova 2
 

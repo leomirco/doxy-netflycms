@@ -5,6 +5,7 @@ date: 2018-12-04 8:14:30 +0600
 tags: technology
 post_image: https://cdn.stocksnap.io/img-thumbs/960w/MHAEYKL7J3.jpg
 comment: true
+featured: false
 excerpt: neque ab fuga voluptatibus. Earum numquam repellat sed perspiciatis ratione explicabo, odit! Repellendus voluptatibus nemo praesentium, id facere atque eum! sit nonummy tellus velit vivamus,
 ---
 

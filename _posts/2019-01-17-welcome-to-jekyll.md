@@ -5,6 +5,7 @@ date:   2019-01-17 18:51:30 +0600
 tags: [jekyll, update]
 post_image: https://images.pexels.com/photos/1366901/pexels-photo-1366901.jpeg?auto=compress&cs=tinysrgb&h=650&w=940
 comment: true
+featured: false
 ---
 
 Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.

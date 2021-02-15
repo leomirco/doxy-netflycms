@@ -1,0 +1,37 @@
+---
+layout: category_list
+title: Year Archives
+description: "Meta description for Support page"
+keywords: "responsive,jekyll,minimal template"
+---
+<div class="topics-area bg-color1">
+         <div class="topics-wrapper section-spacing bminus-30">
+            <div class="container">
+               <div class="col">
+                  {%- assign posts = site.posts  -%}
+                  {%- assign groupedByYear = posts | group_by_exp:"post","post.date | date:'%Y' " -%}
+                  total posts: {{ posts.size }}
+            
+                  {%- for yearitem in groupedByYear -%}
+                     <div class="row">
+                        <article class="topics-service bg-color3 wow fadeIn" data-wow-duration="3s">
+                           <header class="topics-title">
+                              <h4 class="heading-4 text-capitalize">{{ yearitem.name }} ({{yearitem.size}})</h4>
+                           </header>
+                           <ul class="topics-list list-inline">
+                              {%- for item in yearitem.items -%}
+                                 <li>
+                                    <date>{{ item.date | date:'%B %e'}}</date>
+                                    <span><a href="{{ item.url }}">{{ item.title }}</a></span>
+                                 </li>
+                              {% endfor %}
+                           </ul>
+                        </article>
+                     </div>
+                  {% endfor %}			  
+               </div>
+            </div>
+         </div>
+      </div>
+</section>
+<!-- End Topics Area -->

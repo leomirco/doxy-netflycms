@@ -7,13 +7,17 @@
 #
 ####################################################
 
+# aggiunta per prova 31/01/21
+#permalink: /:categories/:title/
+breadcrumbs: true  # disabled by default
+
 # Site settings
-title: "Doxy - Documentation Website"
-email: "themeix@gmail.com"
-description: "Doxy is a responsive Jekyll template for your documentation or knowledgebase website"
+title: "Tiledesk - Documentation Website"
+email: "info@tiledesk.com"
+description: "Tiledesk is AI powered live chat platform"
 keywords: "jekyll, minimal jekyll, jekyll theme, responsive jekyll, seo friendly blog, super fast blog, responsive"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jekyll-doxy.netlify.app/"
+url: "https://tiledesk.com"
 cover_image: "https://themeix.com/wp-content/uploads/dooxy-responsive-html-template-preview.png" # Image will Display in Social Media When share the website
 facebook: "https://www.facebook.com"
 twitter: "https://www.twitter.com"
@@ -27,7 +31,7 @@ dribble: "https://www.dribble.com"
 youtube: "https://www.youtube.com"
 
 ## Theme Options
-animated_header: ""  #true 
+animated_header: "false"  #true 
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -49,7 +53,8 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-archives
   - jekyll-toc
-  - jekyll-seo-tag  
+  - jekyll-seo-tag
+  - jekyll-include-cache
 
 collections:
   team_members:
@@ -61,6 +66,10 @@ collections:
   docs:
     output: true
     permalink: /docs/:title/
+  # Archives
+  archives:
+    output: true
+    permalink: /archives/:path/
 
 
 ############################################################
@@ -122,8 +131,47 @@ pagination:
   indexpage: 'index'
 
 ############################################################
+# JEKYLL-ARCHIVES
+category_archive:
+  type: jekyll-archives
+  path: /categories/
+tag_archive:
+  type: jekyll-archives
+  path: /tags/
+year_archive:
+  type: jekyll-archives
+  path: /archives/
 
+# https://github.com/jekyll/jekyll-archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+    - year
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+    year: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
+    year: /archives/year/:year/
   
+  # Defaults
+  defaults:
+  - scope:
+      path: ""
+      type: tag
+    values:
+      author_profile: true
+  - scope:
+      path: ""
+      type: category
+    values:
+      comments: false
+
+# JEKYLL-ARCHIVES FINE
+
 autopages:
   enabled: true
   collections:
@@ -151,4 +199,6 @@ feed:
   collections:
     posts:
       path: "/index.xml"
+
+
         

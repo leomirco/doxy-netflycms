@@ -1,0 +1,37 @@
+---
+layout: category_list
+title: categoria
+add_to_menu: true
+description: "Meta description for about page"
+keywords: "responsive,jekyll,minimal template"
+---
+
+<!-- Start Category index pagina di sintesi di una categoria -->
+<section class="changelog-area bg-color1">
+   <div class="changelog-wrapper inner-spacing">
+      <div class="container">
+         <div class="row">
+            {% assign category_name = site.data.category.category[0] %}
+            <div class="col-md-6 col-lg-4">
+               <div class="changelog-service wow fadeIn" data-wow-duration="3s">
+                  <div class="changelog-tile">
+                     <h5 class="heading-5">{{category_name.label}}</h5>
+                  </div>
+                  <ul class="changelog-list list-inline">
+                     {{category_name.label}}
+                     {% assign evidence_posts = site.categories[category_name.key] | where: "featured", true %}
+                     {% for doc_post in evidence_posts %}
+                     <li><i class="changelog-fix"></i><a href="{{ doc_post.url | relative_url }}">{{ doc_post.title }} </a></li>
+                     {% endfor %}
+                     {% assign normal_posts = site.categories[category_name.key] | where: "featured", false %}
+                     {% for doc_post in normal_posts limit: site.data.category.limit %}
+                     <li><a href="{{ doc_post.url | relative_url }}">{{ doc_post.title }} </a></li>
+                     {% endfor %}
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- End Changelog Area -->

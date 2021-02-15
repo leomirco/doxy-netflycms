@@ -5,6 +5,7 @@ date: 2018-12-06 8:14:30 +0600
 tags: education
 post_image: https://cdn.stocksnap.io/img-thumbs/960w/LDMEHW1TYG.jpg
 comment: true
+featured: false
 ---
 
 Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.

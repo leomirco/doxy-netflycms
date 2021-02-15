@@ -1,13 +1,13 @@
 ---
-layout: page
-title: Explore Topics
+layout: category_list
+title: Explore Tags
 description: "Meta description for Support page"
 keywords: "responsive,jekyll,minimal template"
 ---
 <div class="topics-area bg-color1">
          <div class="topics-wrapper section-spacing bminus-30">
             <div class="container">
-               <div class="row">
+               <div class="col">
 			{% assign my_doc_tags =  site.docs | map: 'tags' | join: ','  | split: ',' | uniq %}
             {% for tag in my_doc_tags %}
 				<div class="col-md-6 col-lg-4">
@@ -31,9 +31,3 @@ keywords: "responsive,jekyll,minimal template"
       </div>
 </section>
 <!-- End Topics Area -->
-
-
-
-{% include call_to_action.html %}
-{% include support_area.html %}
-{% include footer_top_area.html %}

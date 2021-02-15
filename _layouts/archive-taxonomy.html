@@ -1,5 +1,6 @@
 ---
 layout: default
+author_profile: false
 ---
 {% include header.html %}
    <!-- Start Page Title Area -->
@@ -19,22 +20,24 @@ layout: default
       </div>
    </section>
    <!-- End Page Title Area -->
-   <!-- Start Blog  Area -->
-   <section class="blog-area bg-color1">
+   {% include breadcrumbs.html %}
+    <!-- Start Blog  Area -->
+    <section class="blog-area bg-color1">
       <div class="blog-wrapper section-spacing bminus-30">
          <div class="container">
             <div class="row">
                <div class="col-md-7 col-lg-8">
-                  {% include post_loop.html %}
+                {% for post in page.posts %}
+                  {% include archive-single.html %}
+                {% endfor %}
                </div>
                <div class="col-md-5 col-lg-4">
-                 {% include sidebar_cat_list.html %}
-                 {% include sidebar.html %}
-                 {% include nav.html %}
+                {% include sidebar_cat_list.html %}
+                {% include sidebar_new_post_list.html %}
                </div>
             </div>
          </div>
       </div>
    </section>
    <!-- End Blog Area -->
-{% include footer.html %}
+{% include footer_custom.html %}

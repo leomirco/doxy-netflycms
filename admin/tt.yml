@@ -1,0 +1,171 @@
+collections:
+  - name: menus
+    label: Menu
+    folder: 'src/content/menus'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: Name, name: name, widget: string }
+      - { label: Description, name: description, widget: text, required: false }
+      - {
+          label: Hours,
+          name: hours,
+          widget: list,
+          fields:
+            [
+              {
+                label: From,
+                name: from,
+                widget: datetime,
+                dateFormat: false,
+                format: 'HH:MM',
+              },
+              {
+                label: To,
+                name: to,
+                widget: datetime,
+                dateFormat: false,
+                format: 'HH:MM',
+              },
+            ],
+          required: false,
+        }
+      - {
+          label: Sections,
+          name: sections,
+          widget: list,
+          fields:
+            [
+              { label: Section, name: section, widget: string },
+              {
+                label: 'Food Items',
+                name: fooditem,
+                widget: list,
+                types:
+                  [
+                    {
+                      label: Dishes,
+                      name: dishes,
+                      widget: object,
+                      fields:
+                        [
+                          {
+                            label: Dishes,
+                            name: items,
+                            widget: relation,
+                            collection: menu_items,
+                            file: dishes,
+                            valueField: dishes.*.name,
+                            displayFields: [dishes.*.name],
+                            searchFields: [dishes.*.name],
+                            multiple: true,
+                            required: false,
+                          },
+                        ],
+                    },
+                    {
+                      label: Drinks,
+                      name: drinks,
+                      widget: object,
+                      fields:
+                        [
+                          {
+                            label: Drinks,
+                            name: items,
+                            widget: relation,
+                            collection: menu_items,
+                            file: drinks,
+                            valueField: drinks.*.name,
+                            displayFields: [drinks.*.name],
+                            searchFields: [drinks.*.name],
+                            multiple: true,
+                            required: false,
+                          },
+                        ],
+                    },
+                  ],
+              },
+            ],
+        }
+
+  - name: menu_items
+    label: Menu Items
+    files:
+      - label: Sides
+        name: sides
+        file: 'src/content/sides.json'
+        format: json
+        fields:
+          - name: sides
+            widget: list
+            fields:
+              [
+                { label: Name, name: name, widget: string, required: true },
+                {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                },
+                { label: Price, name: price, widget: number, required: false },
+              ]
+
+      - label: Dishes
+        name: dishes
+        file: 'src/content/dishes.json'
+        format: json
+        fields:
+          - name: dishes
+            widget: list
+            fields:
+              [
+                { label: Name, name: name, widget: string, required: true },
+                { label: Description, name: description, widget: text },
+                { label: Price, name: price, widget: number },
+                {
+                  label: Sides,
+                  name: sides,
+                  widget: relation,
+                  collection: menu_items,
+                  file: 'sides',
+                  valueField: sides.*.name,
+                  displayFields: [sides.*.name],
+                  searchFields: [sides.*.name],
+                  multiple: true,
+                  required: false,
+                },
+              ]
+
+      - label: Drinks
+        name: drinks
+        file: 'src/content/drinks.json'
+        format: json
+        widget: list
+        fields:
+          - name: drinks
+            widget: list
+            fields:
+              [
+                { label: Name, name: name, widget: string, required: true },
+                {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                },
+                { label: Price, name: price, widget: number },
+                {
+                  label: Type,
+                  name: type,
+                  widget: select,
+                  options:
+                    [
+                      'white wine',
+                      'red wine',
+                      'rose wine',
+                      'cocktail',
+                      'beer',
+                      'non-alcoholic',
+                    ],
+                },
+              ]

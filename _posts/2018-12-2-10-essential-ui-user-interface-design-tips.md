@@ -1,17 +1,22 @@
 ---
-layout: post
-title: "10 essential UI (user-interface) design tips"
-description: "Here is the meta description"
-date: 2018-12-02 8:14:30 +0600
-tags: ecommerce shoping
-post_image: https://cdn.stocksnap.io/img-thumbs/960w/DBSSPR0O2Z.jpg
-comment: true
-author: themeix
-author_url: https://themeix.com
-author_image: /assets/images/admin-avatar.png
+excerpt: Sit convallis litora nunc, vestibulum nibh tincidunt, in qui vel dui
+  elit feugiat nulla, vehicula eos nec dolor conubia,
+autore: Andrea
 author_designation: Ux/Ui Designer
-author_bio: Nullam mauris ornare lacus nibh, sed nibh penatibus, pretium quis aute quis nisl, risus sed nec erat, pretium morbi justo interdum
-excerpt:  Sit convallis litora nunc, vestibulum nibh tincidunt, in qui vel dui elit feugiat nulla, vehicula eos nec dolor conubia, 
+author_image: /assets/images/admin-avatar.png
+layout: post
+author: themeix
+title: 10 essential UI (user-interface) design tips
+date: 2018-12-02 8:14:30 +0600
+featured: true
+author_bio: Nullam mauris ornare lacus nibh, sed nibh penatibus, pretium quis
+  aute quis nisl, risus sed nec erat, pretium morbi justo interdum
+tags: ecommerce shoping
+author_url: https://themeix.com
+post_image: https://cdn.stocksnap.io/img-thumbs/960w/DBSSPR0O2Z.jpg
+categories: getting_started
+description: Here is the meta description
+comment: true
 ---
 
 Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.

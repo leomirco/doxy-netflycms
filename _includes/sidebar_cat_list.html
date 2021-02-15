@@ -1,0 +1,18 @@
+<div class="sidebar-area sidebar-right">
+  <h4 class="sub-title heading-4">Categories</h4>
+  <div class="changelog-service wow fadeIn" data-wow-duration="3s">
+  <ul class="changelog-list list-inline">
+   {% for category in site.data.category.category %}
+   {% capture category_draft %}{{ category.draft}}{% endcapture %}
+     {% if category_draft == "true" %}
+     <div class="recent-wrapper">
+        <div class="recent-details">
+          <li><i class="changelog-fix"></i>
+            <a href="/categories/{{ category.label | slugify }}/">{{category.label}}</a>
+          </li>
+        </div>
+     {% endif %}
+    {% endfor %}
+  </ul>
+  </div>
+  </div>

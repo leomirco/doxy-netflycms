@@ -1,11 +1,15 @@
 ---
+excerpt: consectetur adipisicing elit. Suscipit est velit similique laborum,
+  cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab
+  fuga voluptatibus.
 layout: post
-title: "Blog Post - Right Sidebar"
+title: Blog Post - Right Sidebar
 date: 2018-12-05 8:14:30 +0600
+featured: false
 tags: education
 post_image: https://cdn.stocksnap.io/img-thumbs/960w/LDMEHW1TYG.jpg
+categories: integrations
 comment: true
-excerpt: consectetur adipisicing elit. Suscipit est velit similique laborum, cumque aliquam porro dicta debitis repellat, tempore dignissimos, neque ab fuga voluptatibus.
 ---
 
 Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.

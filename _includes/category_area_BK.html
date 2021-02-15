@@ -1,0 +1,29 @@
+<!-- Start Topics  Area -->
+<section class="topics-area bg-color1">
+   <div class="topics-wrapper section-spacing pt-0 bminus-30">
+      <div class="container">
+         <div class="section-title">
+            {% assign title = site.data.topicsarea.title %}
+            {% assign subtitle = site.data.topicsarea.subtitle %}
+            <h2 class="heading-2">{{title}}</h2>
+            <p>{{subtitle}}</p>
+         <div id="archives">
+            {% for category in site.categories %}
+               <div class="archive-group">
+                  {% capture category_name %}{{ category | first }}{% endcapture %}
+                  <div id="#{{ category_name | slugize }}"></div>
+                  <p></p>
+                  <h3 class="category-head">{{ category_name }}</h3>
+                  <a name="{{ category_name | slugize }}"></a>
+                  {% for post in site.categories[category_name] %}
+                  <article class="archive-item">
+                  <h4><a href="{{ site.baseurl }}{{ docs.url }}">{{post.title}}</a></h4>
+                  </article>
+                  {% endfor %}
+               </div>
+            {% endfor %}
+            </div>
+      </div>
+   </div>
+</section>
+<!-- End Topics Area -->

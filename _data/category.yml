@@ -1,0 +1,29 @@
+limit: 5
+category:
+  - key: getting_started
+    slug: getting_started
+    label: Getting started
+    url: /categories/getting-started/
+    draft: true
+  - key: integrations
+    slug: integrations
+    label: Integrations
+    url:  /categories/integrations/
+    draft: false
+    url: /integrations
+  - key: managing_users
+    slug: managing_users
+    label: Managing Users
+    url:  /categories/managing_users/
+    draft: false
+    url: managing_users
+  - key: self_hosted
+    slug: self_hosted
+    label: Self hosted
+    url: /categories/managing_users/
+    draft: false
+  - key: chatbots
+    slug: chatbots
+    label: Chatbots
+    draft: true
+    url: /categories/chatbots/

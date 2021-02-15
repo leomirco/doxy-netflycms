@@ -1,11 +1,15 @@
 ---
+excerpt: Lacinia wisi feugiat tellus neque dui pellentesque, libero Lorem ipsum
+  dolor sit amet, consectetur adipisicing elit.
 layout: post
-title: "Another consectetur adipisicing elit"
+title: Another consectetur adipisicing elit
 date: 2018-12-03 8:14:30 +0600
+featured: true
+autore: Mirco
 tags: ecommerce shoping
 post_image: https://cdn.stocksnap.io/img-thumbs/960w/771S335ARZ.jpg
+categories: getting_started
 comment: true
-excerpt:  Lacinia wisi feugiat tellus neque dui pellentesque, libero Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 ---
 Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like Markdown) and our Liquid renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server.
 
