@@ -1,3 +1,4 @@
+
 /*--------------------------------------------------------------------------
 Template Name: Doxy Responsive Jekyll Template
 Template URI: https://themeix.com/product/doxy-documentation-website-jekyll-template/
@@ -37,6 +38,8 @@ INDEX SASS
 
 
 --------------------------*/
+
+@charset 'UTF-8';
 
 @import "base/variable";
 @import "base/prefix";
@@ -341,8 +344,10 @@ INDEX SASS
     z-index: 22;
 }
 .slider-wrapper{
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 16px;
+    
     @include tablet{
         padding-top: 150px;
         padding-bottom: 180px;
