@@ -720,8 +720,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   z-index: 22; }
 
 .slider-wrapper {
-  padding-top: 250px;
-  padding-bottom: 250px;}
+  padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 16px;}
   @media (max-width: 768px) {
     .slider-wrapper {
       padding-top: 50px;

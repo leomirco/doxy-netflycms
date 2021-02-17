@@ -26,6 +26,7 @@
 	"dependencies": {
 		"@ncwidgets/file-relation": "^0.8.0",
 		"ansi-colors": "^3.2.4",
+		"bootstrap": "^5.0.0-beta2",
 		"concat": "^3.0.0",
 		"del": "^4.1.1",
 		"fs": "0.0.2",

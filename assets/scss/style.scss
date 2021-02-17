@@ -1,5 +1,7 @@
 ---
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
+@charset "utf-8";
 /*--------------------------------------------------------------------------
 Template Name: Doxy Responsive Jekyll Template
 Template URI: https://themeix.com/product/doxy-documentation-website-jekyll-template/
@@ -40,7 +42,8 @@ INDEX SASS
 
 --------------------------*/
 
-@charset 'UTF-8';
+// IMPORT
+
 
 @import "base/variable";
 @import "base/prefix";
@@ -48,6 +51,8 @@ INDEX SASS
 @import "base/base";
 @import "base/typography";
 @import "base/component";
+
+//@import "../../bower_components/bootstrap/scss/bootstrap"; // (1)
   
 /**
 * ============================
@@ -2343,7 +2348,7 @@ h2 a.header-link {
 
   ul {
 
-    border-left: 1px solid #hover-color;
+    border-left: 1px solid;
     margin-top: 18px;
 
     .display-dropdown {
