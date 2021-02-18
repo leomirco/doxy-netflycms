@@ -8,7 +8,7 @@ keywords: "responsive,jekyll,minimal template"
          <div class="topics-wrapper section-spacing bminus-30">
             <div class="container">
                <div class="col">
-			{% assign my_doc_tags =  site.docs | map: 'tags' | join: ','  | split: ',' | uniq %}
+			{% assign my_doc_tags =  site.posts | map: 'tags' | join: ','  | split: ',' | uniq %}
             {% for tag in my_doc_tags %}
 				<div class="col-md-6 col-lg-4">
 					<article class="topics-service bg-color3 wow fadeIn" data-wow-duration="3s">
@@ -16,7 +16,7 @@ keywords: "responsive,jekyll,minimal template"
 							<h4 class="heading-4 text-capitalize">{{ tag }} </h4>
 						</header>
 						<ul class="topics-list list-inline">
-                     {% for doc_post in site.docs %}
+                     {% for doc_post in site.posts %}
                      {% if doc_post.tags contains tag %}
                      <li><a href="{{ doc_post.url  | relative_url }}">{{ doc_post.title }} </a></li>
                      {% endif %}
