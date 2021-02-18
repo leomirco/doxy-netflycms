@@ -8,11 +8,12 @@
             <div class="topics-service-area">
                {% for category in site.data.category.category %}
                 {% capture category_name %}{{ category.key}}{% endcapture %}
+                {% capture category_label %}{{ category.label}}{% endcapture %}
                   {% capture category_draft %}{{ category.draft}}{% endcapture %}
                   {% if category_draft == "true" %}
                <article class="post topics-service bg-color3 wow fadeIn" data-wow-duration="3s">
                      <header class="topics-title">
-                     <h4 class="heading-4 text-capitalize">{{ category_name }} </h4> 
+                     <h4 class="heading-4 text-capitalize">{{ category_label }} </h4> 
                      </header>
                      <ul class="topics-list list-inline">
                         {% assign evidence_posts = site.categories[category_name] | where: "featured", true %}
