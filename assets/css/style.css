@@ -897,10 +897,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
         left: 0;
         margin-top: 2px; }
   .topics-service:hover {
-    transform: matrix(1, 0, 0, 1, 0, -5);
+  /**  transform: matrix(1, 0, 0, 1, 0, -5);
     -ms-transform: matrix(1, 0, 0, 1, 0, -5);
     -webkit-transform: matrix(1, 0, 0, 1, 0, -5);
-    box-shadow: 0 0 20px 5px rgba(33, 107, 188, 0.03);
+  */box-shadow: 0 0 20px 5px rgba(33, 107, 188, 0.03);
     border-color: rgba(33, 108, 188, 0.1); }
     .topics-service:hover .topics-title:before {
       width: 60px; }
