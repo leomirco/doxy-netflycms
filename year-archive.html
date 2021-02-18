@@ -22,7 +22,7 @@ keywords: "responsive,jekyll,minimal template"
                               {%- for item in yearitem.items -%}
                                  <li>
                                     <date>{{ item.date | date:'%B %e'}}</date>
-                                    <span><a href="{{ item.url }}">{{ item.title }}</a></span>
+                                    <span><a href="{{ item.url | relative_url}}">{{ item.title }}</a></span>
                                  </li>
                               {% endfor %}
                            </ul>
