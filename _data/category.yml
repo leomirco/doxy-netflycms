@@ -3,7 +3,7 @@ category:
   - key: getting_started
     slug: getting_started
     label: Getting started
-    url: /categories/getting-started/
+    url: /doxy-netflycms/categories/getting-started/
     draft: true
   - key: integrations
     slug: integrations
