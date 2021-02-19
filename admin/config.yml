@@ -15,20 +15,23 @@ publish_mode: editorial_workflow
 collections:
   # POST
   - name: "blog"
+    #preview_path: "blog/{{year}}/{{month}}/{{slug}}"
     label: "Blog"
     folder: "_posts/"
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
-      preview: false
+      preview: true
+    # use dot notation for nested fields
+    #filter: {field: "language", value: "it"}
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Data di pubblicazione", name: "date", widget: "datetime" }
       - { label: "Corpo", name: "body", widget: "markdown" }
       - { label: "Featured", name: "featured", widget: "boolean", default: 0 }
-      - { label: "Autore", name: "autore", widget: "relation", collection: "autori", file: "autori",  search_fields: ['autori.*.name'], value_field: 'autori.*.label', display_fields: ['autori.*.label'], multiple: false, required: false }
-      - { label: "Categorie", name: "categories", widget: "relation", collection: "category", file: "category",  search_fields: ['category.*.label'], value_field: 'category.*.key', display_fields: ['category.*.label'], multiple: false, required: true }
+      - { label: "Autore", name: "autore", widget: "relation", collection: "config", file: "autori",  search_fields: ['autori.*.name'], value_field: 'autori.*.label', display_fields: ['autori.*.label'], multiple: false, required: false }
+      - { label: "Categorie", name: "categories", widget: "relation", collection: "config", file: "category",  search_fields: ['category.*.label'], value_field: 'category.*.key', display_fields: ['category.*.label'], multiple: false, required: false }
       #- { label: "Posizione categoria", name: "pos_cat", widget: "number" }
       #- { label: "Posizione categoria", name: "pos_categories", widget: "relation", collection: "category", file: "category",  search_fields: ['category.*.order'], value_field: 'category.*.order', display_fields: ['category.*.order'], multiple: false, required: true }
   # DOCS 
@@ -69,8 +72,10 @@ collections:
               - { label: Nome, name: name, widget: string }
               - { label: Designation, name: designation, widget: string }
               - { label: Url, name: url, widget: string }
-  - label: "Testimonial"
-    name: "testimonial"
+  - name: "config"
+    label: "Configurazioni"
+    editor:
+      preview: false
     files:
       - label: "Testimonials"
         name: "testimonials"
@@ -87,11 +92,6 @@ collections:
               - { label: Nome, name: name, widget: string }
               - { label: Designation, name: designation, widget: string }
               - { label: Url, name: url, widget: string }
-  - name: "config"
-    label: "Configurazioni"
-    editor:
-      preview: false
-    files:
       - label: "Navigazione"
         name: "navigation"
         file: "_data/navigation.yml"
@@ -114,25 +114,7 @@ collections:
         fields:
           - { label: Titolo, name: title, widget: string }
           - { label: Sottotitolo, name: subtitle, widget: string }
-      - label: "Categorie"
-        name: "category"
-        file: "_data/category.yml"
-        fields:
-          - label: "Categorie"
-            name: "category"
-            widget: "list"
-            fields:
-              - { label: Key, name: key, widget: string }
-              - { label: Slug, name: slug, widget: string }
-              - { label: Nome, name: label, widget: string }
-              #- { label: Ordine, name: order, widget: number, value_type: "int", min: 1,  max: 101, step: 1  }
-              - { label: "Draft", name: "draft", widget: "boolean", default: 0 }
-              #- { label: "Blog relativo", name: "blog", widget: "relation", collection: "blog",  search_fields: ['title','body'], value_field: 'title', display_fields: ['title'], required: false }
-              #- { label: "Autore", name: "autore", widget: "relation", collection: "autori", file: "autori",  search_fields: ['autori.*.name'], value_field: 'autori.*.label', display_fields: ['autori.*.label'], multiple: true, required: false }
-  - name: autori
-    label: Autori
-    files:
-      - label: "autori"
+      - label: "Autori"
         name: "autori"
         file: "_data/autori.yml"
         fields:
@@ -141,9 +123,6 @@ collections:
             widget: "list"
             fields:
               - { label: Nome, name: label, widget: string }
-  - name: "category"
-    label: "Gestione categorie"
-    files:
       - label: "Categorie"
         name: "category"
         file: "_data/category.yml"
@@ -156,5 +135,5 @@ collections:
               - { label: Key, name: key, widget: string }
               - { label: Slug, name: slug, widget: string }
               - { label: Nome, name: label, widget: string }
-              #- { label: Ordine, name: order, widget: number, value_type: "int", min: 1,  max: 101, step: 1  }
+              - { label: Url, name: url, widget: string }
               - { label: "Draft", name: "draft", widget: "boolean", default: 0 }
