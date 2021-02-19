@@ -1,5 +1,5 @@
 # config.yml
-
+# finale
 backend:
   name: git-gateway #test-repo
   repo: leomirco/doxy-netlycms
@@ -137,10 +137,5 @@ collections:
               - { label: Key, name: key, widget: string }
               - { label: Slug, name: slug, widget: string }
               - { label: Nome, name: label, widget: string }
-<<<<<<< HEAD
               - { label: Url, name: url, widget: string }
               - { label: "Draft", name: "draft", widget: "boolean", default: 0 }
-=======
-              #- { label: Ordine, name: order, widget: number, value_type: "int", min: 1,  max: 101, step: 1  }
-              - { label: "Draft", name: "draft", widget: "boolean", default: 0 }
->>>>>>> e87c045f727b9a049af09511a292be373d7f7634
