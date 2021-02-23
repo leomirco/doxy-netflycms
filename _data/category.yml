@@ -1,19 +1,19 @@
-limit: 5
+limit: 8
 category:
   - key: getting_started
     slug: getting_started
-    label: Getting started
+    label: Getting started for admins
     url: /categories/getting-started/
     draft: true
   - key: integrations
     slug: integrations
     label: Integrations
-    url:  /categories/integrations/
+    url: /categories/integrations/
     draft: false
   - key: managing_users
     slug: managing_users
     label: Managing Users
-    url:  /categories/managing_users/
+    url: /categories/managing_users/
     draft: false
   - key: self_hosted
     slug: self_hosted
