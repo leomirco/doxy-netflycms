@@ -1,8 +1,8 @@
 # config.yml
 # finale
 backend:
-  name: git-gateway -- PRODUZIONE
-  repo: leomirco/doxy-netlycms -- PRODUZIONE
+  name: git-gateway #-- PRODUZIONE
+  repo: leomirco/doxy-netlycms #-- PRODUZIONE
   branch: master
 
 # when using the default proxy server port
@@ -34,7 +34,7 @@ collections:
       - { label: "Featured", name: "featured", widget: "boolean", default: 0 }
       - { label: "Commento", name: "comment", widget: "boolean", default: 0 }
       - { label: "Abstract", name: "excerpt", widget: "string", default: "..." }
-      - { label: "Immagine post", name: "post_image", widget: "image", default: "images/uploads/soletramonta.jpg"  }
+      - { label: "Immagine post", name: "post_image", widget: "image", default: "/images/uploads/service-icon3.png"  }
       - { label: "Autore", name: "autore", widget: "relation", collection: "config", file: "autori",  search_fields: ['autori.*.name'], value_field: 'autori.*.label', display_fields: ['autori.*.label'], multiple: false, required: false }
       - { label: "Categorie", name: "categories", widget: "relation", collection: "config", file: "category",  search_fields: ['category.*.label'], value_field: 'category.*.key', display_fields: ['category.*.label'], multiple: false, required: false }
       - { label: "Tags", name: "tags", widget: "list", default: ["technology"] }
