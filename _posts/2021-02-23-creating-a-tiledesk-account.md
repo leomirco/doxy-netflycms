@@ -2,7 +2,6 @@
 layout: post
 title: Creating a Tiledesk Account
 date: 2021-02-23T16:27:44.908Z
-post_image: https://tiledesk.com/wp-content/uploads/2020/08/tiledesk-logo_x4_vpadding.png
 featured: true
 autore: Ilenia
 post_image: /images/uploads/service-icon3.png
