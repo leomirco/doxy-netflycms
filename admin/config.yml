@@ -1,8 +1,8 @@
 # config.yml
 # finale
 backend:
-  name: git-gateway -- PRODUZIONE
-  repo: leomirco/doxy-netlycms -- PRODUZIONE
+  name: git-gateway #-- PRODUZIONE
+  repo: leomirco/doxy-netlycms #-- PRODUZIONE
   branch: master
 
 # when using the default proxy server port
