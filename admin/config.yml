@@ -1,12 +1,12 @@
 # config.yml
 # finale
 backend:
-  name: git-gateway #test-repo
-  repo: leomirco/doxy-netlycms
+  name: git-gateway -- PRODUZIONE
+  repo: leomirco/doxy-netlycms -- PRODUZIONE
   branch: master
 
 # when using the default proxy server port
-local_backend: false #true
+local_backend: false #--PRODUZIONE
   #branch: master # Branch to update (optional; defaults to master)
 # This line should *not* be indented
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
@@ -15,7 +15,7 @@ locale: 'it'
 # This line should *not* be indented
 publish_mode: editorial_workflow
 collections:
-  # POST
+  # POST ARTICOLI HELP DESK
   - name: "blog"
     #preview_path: "blog/{{year}}/{{month}}/{{slug}}"
     label: "Blog"
@@ -32,8 +32,12 @@ collections:
       - { label: "Data di pubblicazione", name: "date", widget: "datetime" }
       - { label: "Corpo", name: "body", widget: "markdown" }
       - { label: "Featured", name: "featured", widget: "boolean", default: 0 }
+      - { label: "Commento", name: "comment", widget: "boolean", default: 0 }
+      - { label: "Abstract", name: "excerpt", widget: "string", default: "..." }
+      - { label: "Immagine post", name: "post_image", widget: "image", default: "images/uploads/soletramonta.jpg"  }
       - { label: "Autore", name: "autore", widget: "relation", collection: "config", file: "autori",  search_fields: ['autori.*.name'], value_field: 'autori.*.label', display_fields: ['autori.*.label'], multiple: false, required: false }
       - { label: "Categorie", name: "categories", widget: "relation", collection: "config", file: "category",  search_fields: ['category.*.label'], value_field: 'category.*.key', display_fields: ['category.*.label'], multiple: false, required: false }
+      - { label: "Tags", name: "tags", widget: "list", default: ["technology"] }
       #- { label: "Posizione categoria", name: "pos_cat", widget: "number" }
       #- { label: "Posizione categoria", name: "pos_categories", widget: "relation", collection: "category", file: "category",  search_fields: ['category.*.order'], value_field: 'category.*.order', display_fields: ['category.*.order'], multiple: false, required: true }
   # DOCS 

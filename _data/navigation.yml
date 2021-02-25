@@ -12,7 +12,9 @@
 #- text: Years
 #  url: /archives/
 - text: Blog
-  url: /docs
+  url: /blog
+#- text: Post
+ # url: /posts
   
  # submenu:
   #- text: Blog Post - Left Sidebar

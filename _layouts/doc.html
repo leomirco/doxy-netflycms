@@ -10,7 +10,7 @@ toc: true
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          {% include doc_post_breadcrumb.html %}
+          {% include doc_docs_breadcrumbs.html %}
         </div>
       </div>
       <div class="row">
@@ -94,11 +94,6 @@ toc: true
   </div>
   </div>
 </section>
-
-{% include support_area.html %}
-{% include support_area_2.html %}
-{% include footer_custom.html %}
-
 <script>
   var headings = document.querySelectorAll("h2[id]");
   for (var i = 0; i < headings.length; i++) {
@@ -110,3 +105,6 @@ toc: true
     headings[i].appendChild(anchorLink);
   }
 </script>
+
+{% include nav.html %}
+{% include footer_custom.html %}

@@ -23,8 +23,8 @@ title: "Tiledesk - Documentation Website"
 email: "info@tiledesk.com"
 description: "Tiledesk is AI powered live chat platform"
 keywords: "jekyll, minimal jekyll, jekyll theme, responsive jekyll, seo friendly blog, super fast blog, responsive"
-baseurl: "/doxy-netflycms" # the subpath of your site, e.g. /blog
-url: "https://leomirco.github.io"
+baseurl: /doxy-netflycms" # the subpath of your site, e.g. /blog
+url: https://leomirco.github.io"
 cover_image: "https://themeix.com/wp-content/uploads/dooxy-responsive-html-template-preview.png" # Image will Display in Social Media When share the website
 facebook: "https://www.facebook.com"
 twitter: "https://www.twitter.com"
@@ -73,6 +73,9 @@ collections:
   docs:
     output: true
     permalink: /docs/:title/
+  posts:
+    output: true
+    permalink: /posts/:title/
   # Archives
   archives:
     output: true
@@ -88,10 +91,10 @@ pagination:
   enabled: true
 
   # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
-  debug: false
+  debug: true
 
   # The default document collection to paginate if nothing is specified ('posts' is default)
-  collection: 'posts'
+  collection: 'docs'
 
   # How many objects per paginated page, used to be `paginate` (default: 0, means all)
   per_page: 2
