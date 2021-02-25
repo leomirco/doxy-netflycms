@@ -3,9 +3,13 @@ layout: post
 title: Creating a Tiledesk Account
 date: 2021-02-23T16:27:44.908Z
 featured: true
-autore: Ilenia
+comment: true
+excerpt: Creating a Tiledesk Account
 post_image: /images/uploads/service-icon3.png
+autore: Ilenia
 categories: getting_started
+tags:
+  - tecnology
 ---
 To create a Tiledesk account go to the [SIGN UP](https://console.tiledesk.com/v2/dashboard/#/signup)  page and enter the data required for the registration.
 
