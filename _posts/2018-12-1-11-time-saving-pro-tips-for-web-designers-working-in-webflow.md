@@ -8,9 +8,10 @@ excerpt: magna vivamus varius. Faucibus vestibulum faucibus elementum vulputate
   suscipit. Sit convallis litora nunc, vestibulum nibh tincidunt, in qui vel dui
   elit feugiat nulla, vehicula
 post_image: https://cdn.stocksnap.io/img-thumbs/960w/VJM1ZWXLPY.jpg
-autore: ""
-categories: ""
-tags: []
+autore: Ilenia
+categories: getting_started
+tags:
+  - technology
 ---
 Questa è una prova 2
 
