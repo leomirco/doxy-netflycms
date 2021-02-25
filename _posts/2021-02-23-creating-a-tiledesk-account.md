@@ -2,7 +2,7 @@
 layout: post
 title: Creating a Tiledesk Account
 date: 2021-02-23T16:27:44.908Z
-post_image: https://cdn.stocksnap.io/img-thumbs/960w/DBSSPR0O2Z.jpg
+post_image: https://tiledesk.com/wp-content/uploads/2020/08/tiledesk-logo_x4_vpadding.png
 featured: true
 autore: Ilenia/images/uploads/soletramonta.jpg
 categories: getting_started
