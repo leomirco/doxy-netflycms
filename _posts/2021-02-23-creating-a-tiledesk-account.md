@@ -5,7 +5,7 @@ date: 2021-02-23T16:27:44.908Z
 featured: true
 comment: true
 excerpt: Creating a Tiledesk Account
-post_image: https://reverent-panini-e2d056.netlify.app/images/uploads/service-icon3.png
+post_image: https://reverent-panini-e2d056.netlify.app/assets/images/logo-deep-linking-tiledesk.png
 autore: Ilenia
 categories: getting_started
 tags:
