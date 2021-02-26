@@ -7,7 +7,7 @@ comment: true
 excerpt: Creating a Tiledesk Account
 post_image: /images/uploads/popular-1.png
 autore: Ilenia
-categories: getting_started
+categories: getting_started_for_admins
 tags:
   - tecnology
 ---
