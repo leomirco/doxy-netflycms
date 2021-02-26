@@ -5,6 +5,16 @@ category:
     label: Getting started for admins
     url: /categories/getting-started-for-admins/
     draft: true
+  - draft: true
+    key: getting_started_for_agents
+    slug: getting_started_for_agents
+    label: Getting started for agents
+    url: /categories/getting_started_for_agents/
+  - key: chatbots
+    slug: chatbots
+    label: Chatbots
+    url: /categories/chatbots/
+    draft: tru
   - key: integrations
     slug: integrations
     label: Integrations
@@ -20,13 +30,3 @@ category:
     label: Self hosted
     url: /categories/managing_users/
     draft: false
-  - key: chatbots
-    slug: chatbots
-    label: Chatbots
-    url: /categories/chatbots/
-    draft: tru
-  - draft: true
-    key: getting_started_for_agents
-    slug: getting_started_for_agents
-    label: Getting started for agents
-    url: getting_started_for_agents
