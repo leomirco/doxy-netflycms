@@ -1,9 +1,9 @@
 limit: 8
 category:
-  - key: getting_started
-    slug: getting_started
-    label: Getting started
-    url: /categories/getting-started/
+  - key: getting_started_for_admins
+    slug: getting_started_for_admins
+    label: Getting started for admins
+    url: /categories/getting-started-for-admins/
     draft: true
   - key: integrations
     slug: integrations
