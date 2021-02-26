@@ -25,8 +25,8 @@ category:
     label: Integrations
     url: /categories/integrations/
     draft: true
-  - key: managing_users
-    slug: managing_users
-    label: Managing Users
-    url: /categories/managing_users/
-    draft: false
+  - draft: true
+    key: developer_zone
+    slug: developer_zone
+    label: Developer zone
+    url: /categories/developer_zone/
