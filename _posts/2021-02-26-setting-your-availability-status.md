@@ -16,7 +16,7 @@ When you’re logged into Tiledesk, you can set your status to any of the follow
 * **Available**: Signifies you’re available to answer chats.
 * **Unavailable**: Signifies internally to other agents that you’re away from your computer. You can still serve chat requests when your status is Unavailable.
 
-**To manually change your status**\
+**To manually change your status**
 
 * To change your status once you’re already logged in, click the avatar image in the upper-left corner of the dashboard menu.
 
