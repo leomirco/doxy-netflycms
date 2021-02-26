@@ -8,7 +8,7 @@ author_profile: false
    <section class="page-title-area bg-cover1">
       <div class="page-title-wrapper section-spacing">
          <div class="page-title text-center white-text">
-            <h2 class="heading-2">{{page.title}}</h2>
+            <h2 class="heading-2">{{page.title | replace: '_', '-' }}</h2>
             <ul class="page-title-meta list-inline">
              {% if page.author%}
                <li class="list-inline-item"><img src="{{ '/assets/images/slider-author.png' | relative_url }}" alt="{{page.author}}"><a href="{{page.author_url}}">{{page.author}}</a></li>

@@ -25,7 +25,7 @@
        <!--<span>{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span> --> 
       {% endif %}
       {% if forloop.last %}
-        <li class="breadcrumb-item">{{ page.title }}</li>
+        <li class="breadcrumb-item">{{ page.title | replace: '_', '-' }}</li>
       {% else %}
         {% assign i = i | plus: 1 %}
         <li class="breadcrumb-item">
