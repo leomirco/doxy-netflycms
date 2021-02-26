@@ -25,7 +25,7 @@ category:
     label: Integrations
     url: /categories/integrations/
     draft: true
-  - draft: true
+  - draft: false
     key: developer_zone
     slug: developer_zone
     label: Developer zone
