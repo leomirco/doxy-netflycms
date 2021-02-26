@@ -19,7 +19,7 @@ category:
     slug: self_hosted
     label: Self hosted
     url: /categories/managing_users/
-    draft: true
+    draft: false
   - key: integrations
     slug: integrations
     label: Integrations
