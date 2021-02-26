@@ -26,7 +26,7 @@ category:
     url: /categories/chatbots/
     draft: tru
   - draft: true
-    key: getting_started _for_agents
+    key: getting_started_for_agents
     slug: getting_started_for_agents
     label: Getting started for agents
     url: getting_started_for_agents
