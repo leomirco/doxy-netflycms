@@ -16,24 +16,20 @@
                     <a class="header-logo" href="{{ "/" | relative_url }}"><img src="{{ '/assets/images/logo-deep-linking-tiledesk.png' | relative_url }}" alt="header logo" width="200" ></a>
                 </div>
       <div class="navigation-right">
-                     <nav class="navigation-navbar">
-                        <ul id="navigation-menu" class="slimmenu">
+        <nav class="navigation-navbar">
+            <ul id="navigation-menu" class="slimmenu">
 				{% for link in site.data.navigation %}
 					{% assign active = nil %}
-
 					{% for sublink in link.submenu %}
 						{% if page.url contains sublink.url %}
 							{% assign active = 'active' %}
 						{% endif %}
 					{% endfor %}
-
 					{% if page.url contains link.url %}
 						{% assign active = 'active' %}
 					{% endif %}
-
 					<li class="{{ active }}{% if link.submenu %} themeix-dropdown has-children{% endif %}">
 						<a href="{{ link.url | relative_url }}">{{ link.text }}</a>
-
 						{% if link.submenu %}						
 							<ul class="themeix-dropdown-item" role="menu">
 								{% for sublink in link.submenu %}
@@ -45,13 +41,15 @@
 						{% endif %}
 					</li>
 				{% endfor %}
+               <!-- 
 			 	 <li>
-              <a class="nav-search" data-toggle="modal" data-target="#modal"><img src="{{ '/assets/images/search-logo.png' | relative_url }}" alt="nav search"></a>
-                                </li>
+                    <a class="nav-search" data-toggle="modal" data-target="#modal"><img src="{{ '/assets/images/search-logo.png' | relative_url }}" alt="nav search"></a>
+                </li>
 			 </ul>
-                     </nav>
-	
+            -->
+            </nav>
                 </div>
+               <!-- 
                 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
                         <div class="modal-content">
@@ -64,7 +62,7 @@
                             <div class="modal-body">
                                 <form class="modal-search-form" action="#">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="search-input" placeholder="Search Somthing" required="">
+                                        <input type="text" class="form-control" id="search-input" placeholder="Search blog posts.." required="">
                                         <span class="input-group-btn">
                                    <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
                                      </span>
@@ -75,8 +73,10 @@
                         </div>
                     </div>
                 </div>
+                -->
             </div>
         </div>
+        <!-- Html Elements for Search -->
     </div>
 </header>
 <!-- End Header Area -->
