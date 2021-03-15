@@ -18,9 +18,24 @@
          </div>
          <div class="row">
             <div class="header-navigation" style="text-align: center; margin-top:50px;">
-               <div id="search-container">
-                   <input type="text" id="search-input" placeholder="search...">
-                   <ul id="results-container"></ul>
+               <div id="search-container"  > <!--style="padding-left: 30px;padding-right: 30px;"-->
+                   <input type="text" id="search-input" placeholder="search..." style="overflow: visible;  
+                   height: 66px;
+                   border-radius: 4px;
+                   border: none;
+                   outline: none;
+                   font-size: 18px;
+                   padding: 20px 32px 21px 59px;
+                   width: 100%;" >
+                   <i class="fa fa-search" aria-hidden="true"></i>
+                   <ul id="results-container" style="margin: -30px 0 0 0;list-style: none;background-color: #fff !important;  
+                   position: absolute;   
+                   width: 100%; 
+                   max-height: 250px;  
+                   padding-bottom: 13px;  
+                   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%); 
+                   border-top: 1px solid #1757AD; 
+                   overflow: auto;"></ul>
                    </div>
                    <!-- Script pointing to search-script.js -->
                    <script src="/assets/js/simple-jekyll-search.min.js" type="text/javascript"></script>
