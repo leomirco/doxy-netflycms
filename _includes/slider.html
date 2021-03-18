@@ -1,5 +1,6 @@
 <!-- Start Slider  Area -->
-<section class="slider-area bg-cover1">
+{% capture bg-cover-custom_color %}{{site.data.header.custom_color}}{% endcapture %}
+<section class="slider-area bg-cover-custom" style="background-color: {{bg-cover-custom_color}}!important;">
     <div class="slider-wrapper full-padding">
         <div class="container">
             <div class="row">

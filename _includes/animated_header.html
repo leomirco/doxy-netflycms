@@ -1,5 +1,8 @@
 <!-- Start Slider  Area -->
-<section class="slider-area bg-cover1">
+<!--<section class="slider-area bg-cover1">-->
+   <!--style="background-color:"+"{{bg-cover-custom_color}}"+"!important;"-->
+{% capture bg-cover-custom_color %}{{site.data.header.custom_color}}{% endcapture %}
+<section class="slider-area bg-cover-custom" id="header_cover" style="background-color: {{bg-cover-custom_color}}!important;">
    <div id="particles-js"></div>
    <div class="slider-wrapper section-spacing">
       <div class="container">
@@ -19,7 +22,7 @@
          <div class="row">
             <div class="header-navigation" style="text-align: center; margin-top:50px;">
                <div id="search-container"  > <!--style="padding-left: 30px;padding-right: 30px;"-->
-                   <input type="text" id="search-input" placeholder="search..." style="overflow: visible;  
+                   <input type="text" id="search-input" placeholder="search..." onkeyup="imputTextCount(this)" style="overflow: visible;  
                    height: 66px;
                    border-radius: 4px;
                    border: none;
@@ -35,7 +38,8 @@
                    padding-bottom: 13px;  
                    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%); 
                    border-top: 1px solid #1757AD; 
-                   overflow: auto;"></ul>
+                   overflow: auto;
+                   display: none;"></ul>
                    </div>
                    <!-- Script pointing to search-script.js -->
                    <script src="/assets/js/simple-jekyll-search.min.js" type="text/javascript"></script>
@@ -47,6 +51,29 @@
                      json: '/search.json',
                      searchResultTemplate: '<div class="search-results"><div class="search-content"><h5><a href="{url}">{title}</a></h5></div></div>'
                    })
+                   </script>
+                   <script>
+                      getResultcontainer();
+                      function getResultcontainer() {
+                        var resultsContainerElem = document.getElementById('results-container');
+                        console.log("resultsContainerElem",resultsContainerElem);
+                        var searchInputElem = document.getElementById('search-input').value.length;
+                        console.log("searchInputElem",searchInputElem);
+                     }
+                     function imputTextCount(e) {
+                     // i am spammy!
+                     console.log(e.value);
+                     console.log(e.value.length);
+                     var text_length = e.value.length;
+                     var resultsContainerElem = document.getElementById('results-container');
+                     if (text_length > 0) {
+                        resultsContainerElem.classList.add("display-container");
+                        //resultsContainerElem.setAttribute("style", "display: block !important;");
+                     }
+                     if (text_length == 0) {
+                        resultsContainerElem.classList.remove("display-container");
+                     }
+                  }
                    </script>
                </div>
          </div>

@@ -1,37 +1,60 @@
 # config.yml
 # finale
 backend:
-  name: git-gateway #-- PRODUZIONE
+  name: git-gateway #-- PRODUZIONE test-repo 
   repo: leomirco/doxy-netlycms #-- PRODUZIONE
   branch: master
 
 # when using the default proxy server port
-local_backend: false #--PRODUZIONE
+local_backend: false #--PRODUZIONE false
   #branch: master # Branch to update (optional; defaults to master)
 # This line should *not* be indented
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
 # lingua GUI
 locale: 'it'
 # This line should *not* be indented
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 collections:
   # POST ARTICOLI HELP DESK
-  - name: "blog"
+  - name: "posts"
     #preview_path: "blog/{{year}}/{{month}}/{{slug}}"
-    label: "Blog"
+    label: "Posts"
+    label_singular: 'Post' # Used in the UI, ie: "New Post"
+    description: >
+      Elenco dei Posts creati per l'Help Center.
     folder: "_posts/"
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    summary: '{{title}} -- {{day}}/{{month}}/{{year}}'
     editor:
       preview: true
     # use dot notation for nested fields
     #filter: {field: "language", value: "it"}
+    view_filters:
+      - label: Posts With Index
+        field: title
+        pattern: 'This is post #'
+      - label: Posts Without Index
+        field: title
+        pattern: front matter post
+      - label: Featured
+        field: featured
+        pattern: true
+    view_groups:
+      - label: Year
+        field: date
+        pattern: \d{4}
+      - label: Drafts
+        field: draft
+      - label: Featured
+        field: featured
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Data di pubblicazione", name: "date", widget: "datetime" }
       - { label: "Corpo", name: "body", widget: "markdown" }
       - { label: "Featured", name: "featured", widget: "boolean", default: 0 }
+      - { label: "Draft", name: "draft", widget: "boolean", default: 0 }
       - { label: "Commento", name: "comment", widget: "boolean", default: 0 }
       - { label: "Abstract", name: "excerpt", widget: "string", default: "..." }
       - { label: "Immagine post", name: "post_image", widget: "image", default: "/images/uploads/service-icon3.png"  }
@@ -42,7 +65,7 @@ collections:
       #- { label: "Posizione categoria", name: "pos_categories", widget: "relation", collection: "category", file: "category",  search_fields: ['category.*.order'], value_field: 'category.*.order', display_fields: ['category.*.order'], multiple: false, required: true }
   # DOCS 
   - name: "docs"
-    label: "Docs"
+    label: "Blog"
     folder: "_docs/"
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -63,42 +86,52 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Testimonials"
-        name: "testimonials"
-        file: "_data/testimonials.yml"
-        widget: list
+      - label: "Contact"
+        name: "contact"
+        file: "_data/contact.yml"
         fields:
-          - label: Team
-            name: "team"
-            widget: list
-            fields:
-              - { label: Image_url, name: image_url, widget: image }
-              - { label: Descrizione, name: desc, widget: "markdown" }
-              - { label: Rating, name: rating, widget: string }
-              - { label: Nome, name: name, widget: string }
-              - { label: Designation, name: designation, widget: string }
-              - { label: Url, name: url, widget: string }
+        - { label: Address, name: address, widget: string, required: false}
+        - { label: City, name: city, widget: string, required: false}
+        - { label: Email1, name: email1, widget: string, required: false}
+        - { label: Email2, name: email2, widget: string, required: false}
+        - { label: Phone1, name: phone1, widget: string, required: false}
+        - { label: Phone2, name: phone2, widget: string, required: false}
+      #- label: "Testimonials"
+      #  name: "testimonials"
+      #  file: "_data/testimonials.yml"
+      #  widget: list
+      #  fields:
+      #    - label: Team
+      #      name: "team"
+      #      widget: list
+      #      fields:
+      #        - { label: Image_url, name: image_url, widget: image }
+      #        - { label: Descrizione, name: desc, widget: "markdown" }
+      #        - { label: Rating, name: rating, widget: string }
+      #        - { label: Nome, name: name, widget: string }
+      #        - { label: Designation, name: designation, widget: string }
+      #        - { label: Url, name: url, widget: string }
   - name: "config"
-    label: "Configurazioni"
+    label: "Configurazione del sito"
     editor:
       preview: false
     files:
-      - label: "Testimonials"
-        name: "testimonials"
-        file: "_data/testimonials.yml"
-        widget: list
-        fields:
-          - label: Team
-            name: "team"
-            widget: list
-            fields:
-              - { label: Image_url, name: image_url, widget: image }
-              - { label: Descrizione, name: desc, widget: "markdown" }
-              - { label: Rating, name: rating, widget: string }
-              - { label: Nome, name: name, widget: string }
-              - { label: Designation, name: designation, widget: string }
-              - { label: Url, name: url, widget: string }
-      - label: "Navigazione"
+      #- label: "Testimonials"
+      #  name: "testimonials"
+      #  file: "_data/testimonials.yml"
+      #  widget: list
+      #  fields:
+      #    - label: Team
+      #      name: "team"
+      #      widget: list
+      #      fields:
+      #        - { label: Image_url, name: image_url, widget: image }
+      #        - { label: Descrizione, name: desc, widget: "markdown" }
+      #        - { label: Rating, name: rating, widget: string }
+      #        - { label: Nome, name: name, widget: string }
+      #        - { label: Designation, name: designation, widget: string }
+      #        - { label: Url, name: url, widget: string }
+      - label: "Navigazione sito"
         name: "navigation"
         file: "_data/navigation.yml"
         fields:
@@ -114,13 +147,53 @@ collections:
                 fields:
                   - { label: Text, name: text, widget: string }
                   - { label: Url, name: url, widget: string }
-      - label: "Topics_area"
+      - label: "Widget categorie"
         name: "topics_area"
         file: "_data/topicsarea.yml"
         fields:
           - { label: Titolo, name: title, widget: string }
           - { label: Sottotitolo, name: subtitle, widget: string }
-      - label: "Autori"
+      - label: "Header"
+        name: "header"
+        file: "_data/header.yml"
+        fields:
+          - label: Favicon
+            name: favicon_url
+            widget: image
+            default: /assets/images/favicon.png
+            media_library:
+              config:
+                multiple: false
+                media_folder: /assets/images/ 
+          - label: Carica un logo
+            name: logo_url
+            widget: image
+            default: /assets/images/logo-deep-linking-tiledesk.png
+            media_library:
+              config:
+                multiple: false
+                media_folder: /assets/images/  
+          - label: Colore header
+            name: custom_color
+            widget: color
+            enableAlpha: true,
+            allowInput: true 
+      - label: "Footer"
+        name: "footer"
+        file: "_data/footer.yml"
+        fields:
+          - { label: Titolo, name: title, widget: string, required: false}
+          - { label: Sottotitolo, name: subtitle, widget: string, required: false }
+          - { label: Behance, name: behance, widget: string, required: false}
+          - { label: Twitter, name: twitter, widget: string, required: false }
+          - { label: Instagram, name: instagram, widget: string, required: false }
+          - { label: Github, name: github, widget: string, required: false }
+          - { label: Linkedin, name: linkedin, widget: string, required: false }
+          - { label: Reddit, name: reddit, widget: string, required: false }
+          - { label: Vimeo, name: vimeo, widget: string, required: false }
+          - { label: Dribble, name: dribble, widget: string, required: false }
+          - { label: youtube, name: youtube, widget: string, required: false }
+      - label: "Autori degli articoli"
         name: "autori"
         file: "_data/autori.yml"
         fields:
@@ -129,7 +202,7 @@ collections:
             widget: "list"
             fields:
               - { label: Nome, name: label, widget: string }
-      - label: "Categorie"
+      - label: "Categorie degli articoli"
         name: "category"
         file: "_data/category.yml"
         fields:

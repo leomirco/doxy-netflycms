@@ -5,8 +5,10 @@
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <div class="footer-widget wow fadeIn" data-wow-duration="1s">
-                        <h5 class="footer-title heading-5">About Tiledesk</h5>
-                        <p>Tiledesk is AI powered live chat platform</p>
+                        {% capture footer_title %}{{site.data.footer.title}}{% endcapture %}
+                        <h5 class="footer-title heading-5">{{footer_title}}</h5>
+                        {% capture footer_subtitle %}{{site.data.footer.subtitle}}{% endcapture %}
+                        <p>{{footer_subtitle}}</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-2">
@@ -36,36 +38,37 @@
                     <div class="footer-widget wow fadeIn" data-wow-duration="4s">
                         <h5 class="footer-title heading-5">Follow Us</h5>
                         <ul class="footer-socials list-inline">
-                            {% if site.behance %}
-                                <li class="list-inline-item"><a href="{{site.behance}}"><i class="fa fa-behance"></i></a></li>
+                            {% capture behance %}{{site.data.footer.behance}}{% endcapture %}
+                            {% if behance != "" %}
+                                <li class="list-inline-item"><a href="{{behance}}"><i class="fa fa-behance"></i></a></li>
                             {% endif %}
-
-                            {% if site.twitter %}
-                                <li class="list-inline-item"><a href="{{site.twitter}}"><i class="fa fa-twitter"></i></a></li>
+                            {% capture twitter %}{{site.data.footer.twitter}}{% endcapture %}
+                            {% if twitter != "" %}
+                                <li class="list-inline-item"><a href="{{twitter}}"><i class="fa fa-twitter"></i></a></li>
                             {% endif %}
-
-                            {% if site.instagram %}
-                                <li class="list-inline-item"><a href="{{site.instagram}}"><i class="fa fa-instagram"></i></a></li>
+                            {% capture instagram %}{{site.data.footer.instagram}}{% endcapture %}
+                            {% if instagram != "" %}
+                                <li class="list-inline-item"><a href="{{instagram}}"><i class="fa fa-instagram"></i></a></li>
                             {% endif %}
-
-                            {% if site.linkedin %}
-                                <li class="list-inline-item"><a href="{{site.linkedin}}"><i class="fa fa-linkedin"></i></a></li>
+                            {% capture linkedin %}{{site.data.footer.linkedin}}{% endcapture %}
+                            {% if linkedin != "" %}
+                                <li class="list-inline-item"><a href="{{linkedin}}"><i class="fa fa-linkedin"></i></a></li>
                             {% endif %}
-
-                            {% if site.reddit %}
-                                <li class="list-inline-item"><a href="{{site.reddit}}"><i class="fa fa-reddit"></i></a></li>
+                            {% capture reddit %}{{site.data.footer.reddit}}{% endcapture %}
+                            {% if reddit !="" %}
+                                <li class="list-inline-item"><a href="{{reddit}}"><i class="fa fa-reddit"></i></a></li>
                              {% endif %}
-
-                            {% if site.vimeo %}
-                                <li class="list-inline-item"><a href="{{site.vimeo}}"><i class="fa fa-vimeo"></i></a></li>
+                            {% capture vimeo %}{{site.data.footer.vimeo}}{% endcapture %}
+                            {% if vimeo != "" %}
+                                <li class="list-inline-item"><a href="{{vimeo}}"><i class="fa fa-vimeo"></i></a></li>
                             {% endif %}
-
-                            {% if site.dribbble %}
-                                 <li class="list-inline-item"><a href="{{site.dribbble}}"><i class="fa fa-dribbble"></i></a></li>
+                            {% capture dribbble %}{{site.data.footer.dribbble}}{% endcapture %}
+                            {% if dribbble != "" %}
+                                 <li class="list-inline-item"><a href="{{dribbble}}"><i class="fa fa-dribbble"></i></a></li>
                             {% endif %}
-
-                            {% if site.github %}
-                                <li class="list-inline-item"><a href="{{site.github}}"><i class="fa fa-github"></i></a></li>
+                            {% capture github %}{{site.data.footer.github}}{% endcapture %}
+                            {% if github != "" %}
+                                <li class="list-inline-item"><a href="{{github}}"><i class="fa fa-github"></i></a></li>
                             {% endif %}
                         </ul>
                     </div>

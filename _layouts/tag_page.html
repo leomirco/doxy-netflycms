@@ -6,8 +6,8 @@ pagination:
 
 {% include header.html %}
 <!-- Start Page Title Area -->
-<section class="page-title-area bg-cover1"
-   >
+{% capture bg-cover-custom_color %}{{site.data.header.custom_color}}{% endcapture %}
+<section class="page-title-area bg-cover-custom" style="background-color: {{bg-cover-custom_color}}!important;" >
    <div class="page-title-wrapper section-spacing">
       <div class="page-title text-center white-text">
          <h1 class="heading-1">

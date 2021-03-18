@@ -13,7 +13,8 @@
         <div class="container">
             <div class="navigation-box">
                 <div class="navigation-left">
-                    <a class="header-logo" href="{{ "/" | relative_url }}"><img src="{{ '/assets/images/logo-deep-linking-tiledesk.png' | relative_url }}" alt="header logo" width="200" ></a>
+                    {% capture logo %}{{site.data.header.logo_url}}{% endcapture %}
+                    <a class="header-logo" href="{{ "/" | relative_url }}"><img src="{{ logo | relative_url }}" alt="header logo" width="200" ></a>
                 </div>
       <div class="navigation-right">
         <nav class="navigation-navbar">

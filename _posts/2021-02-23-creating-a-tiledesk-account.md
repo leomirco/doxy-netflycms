@@ -2,7 +2,8 @@
 layout: post
 title: Creating a Tiledesk Account
 date: 2021-02-23T16:27:44.908Z
-featured: true
+featured: false
+draft: false
 comment: true
 excerpt: Creating a Tiledesk Account
 post_image: /images/uploads/popular-1.png

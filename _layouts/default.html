@@ -28,10 +28,18 @@
     <!-- Site Title -->
     <title>{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}</title>
     <!--  Add Favicon -->
-	
-    <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/x-icon"/>
-    <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/x-icon"/>
-    <!-- Add CSS File -->
+	<!-- <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/x-icon"/>
+    	 <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/x-icon"/> -->
+	{% capture favicon_url %}{{site.data.header.favicon_url}}{% endcapture %}
+	{% if favicon_url != "" %}
+   		 <link rel="shortcut icon" href="{{ favicon_url | relative_url }}" type="image/x-icon"/>
+    	 <link rel="icon" href="{{ favicon_url | relative_url }}" type="image/x-icon"/>
+	{% endif %}
+	{% if favicon_url == "" %}
+   		 <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/x-icon"/>
+    	 <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/x-icon"/>
+	{% endif %}
+	<!-- Add CSS File -->
     <link rel="stylesheet" href="{{ '/assets/css/app.min.css' | relative_url }} "/>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
 	

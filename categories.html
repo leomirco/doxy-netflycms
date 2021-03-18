@@ -1,6 +1,7 @@
 ---
 layout: category_list
 title: Explore Categories
+add_to_menu: false
 description: "Meta description for Support page"
 keywords: "responsive,jekyll,minimal template"
 ---
@@ -21,7 +22,10 @@ keywords: "responsive,jekyll,minimal template"
                            <ul class="topics-list list-inline">
                               {% assign normal_posts = site.categories[category_name] %}
                               {% for doc_post in normal_posts %}
-                              <li><a href="{{ doc_post.url  | relative_url }}">{{ doc_post.title }} </a></li>
+                                 {% capture post_draft %}{{ doc_post.draft}}{% endcapture %}
+                                 {% if post_draft == "false" %}
+                                 <li><a href="{{ doc_post.url  | relative_url }}">{{ doc_post.title }} </a></li>
+                                 {% endif %}
                               {% endfor %}
                            </ul>
                         </article>

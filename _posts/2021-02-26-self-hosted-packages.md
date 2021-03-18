@@ -3,6 +3,7 @@ layout: post
 title: Self-hosted packages
 date: 2021-02-26T17:21:50.900Z
 featured: true
+draft: false
 comment: 0
 excerpt: Self-Hosted packages are provided to offer the following advantages
   over the SaaS solution

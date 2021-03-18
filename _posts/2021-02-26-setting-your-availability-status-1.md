@@ -3,6 +3,7 @@ layout: post
 title: Setting your availability status
 date: 2021-02-26T16:50:05.916Z
 featured: true
+draft: false
 comment: 0
 excerpt: Setting your availability status
 post_image: /images/uploads/service-icon3.png

@@ -1,6 +1,7 @@
 ---
 layout: category_list
 title: Year Archives
+add_to_menu: false
 description: "Meta description for Support page"
 keywords: "responsive,jekyll,minimal template"
 ---
@@ -20,10 +21,13 @@ keywords: "responsive,jekyll,minimal template"
                            </header>
                            <ul class="topics-list list-inline">
                               {%- for item in yearitem.items -%}
+                                 {% capture post_draft %}{{ item.draft}}{% endcapture %}
+                                 {% if post_draft == "false" %}
                                  <li>
                                     <date>{{ item.date | date:'%B %e'}}</date>
                                     <span><a href="{{ item.url | relative_url}}">{{ item.title }}</a></span>
                                  </li>
+                                 {% endif %}  
                               {% endfor %}
                            </ul>
                         </article>

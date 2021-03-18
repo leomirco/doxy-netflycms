@@ -1,0 +1,31 @@
+---
+layout: category_list
+title: Explore Pages
+add_to_menu: false
+description: "Meta description for Support page"
+keywords: "responsive,jekyll,minimal template"
+---
+<div class="topics-area bg-color1">
+         <div class="topics-wrapper section-spacing bminus-30">
+            <div class="container">
+               <div class="col">
+                     <div class="row">
+                        <article class="topics-service bg-color3 wow fadeIn" data-wow-duration="3s">
+                           <header class="topics-title">
+                              <h4 class="heading-4 ">Tutte le pagine</h4>
+                           </header>
+                           <ul class="topics-list list-inline">
+                              {% for page in site.data.navigation %}
+                              {% capture page_text %}{{ page.text}}{% endcapture %}
+                              {% capture page_url %}{{ page.url}}{% endcapture %}
+                                 <li><a href="{{ page_url  | relative_url }}">{{ page_text }} </a></li>
+                              {% endfor %}
+                           </ul>
+                        </article>
+                     </div>		  
+               </div>
+            </div>
+         </div>
+      </div>
+</section>
+<!-- End Topics Area -->

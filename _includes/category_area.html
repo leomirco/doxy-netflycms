@@ -18,12 +18,18 @@
                      <ul class="topics-list list-inline">
                         {% assign evidence_posts = site.categories[category_name] | where: "featured", true %}
                         {% for doc_post in evidence_posts %}
+                        {% capture post_draft %}{{ doc_post.draft}}{% endcapture %}
+                           {% if post_draft == "false" %}
                         <li><a href="{{ doc_post.url | relative_url }}">{{ doc_post.title }} </a></li>
+                           {% endif %}
                         {% endfor %}
 
                         {% assign normal_posts = site.categories[category_name] | where: "featured", false %}
                         {% for doc_post in normal_posts limit: site.data.category.limit %}
+                        {% capture post_draft %}{{ doc_post.draft}}{% endcapture %}
+                        {% if post_draft == "false" %}
                         <li><a href="{{ doc_post.url | relative_url }}">{{ doc_post.title }} </a></li>
+                           {% endif %}
                         {% endfor %}
 
                       <!--  {% for doc_post in site.categories[category_name] limit: site.data.category.limit %}
