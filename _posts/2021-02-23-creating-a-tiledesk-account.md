@@ -10,7 +10,7 @@ post_image: /images/uploads/popular-1.png
 autore: Ilenia
 categories: getting_started_for_admins
 tags:
-  - tecnology
+  - technology
 ---
 To create a Tiledesk account go to the [SIGN UP](https://console.tiledesk.com/v2/dashboard/#/signup)  page and enter the data required for the registration.
 
