@@ -39,6 +39,7 @@ collections:
         pattern: front matter post
       - label: Featured
         field: featured
+        pattern: true
       - label: Category
         field: categories
         pattern: true
