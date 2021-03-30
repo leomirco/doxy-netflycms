@@ -2,11 +2,13 @@
 layout: post
 title: "Google Tag Manager: add Tiledesk to your sites"
 date: 2021-03-30T14:58:29.485Z
-featured: 0
+featured: true
 draft: 0
 comment: 0
 excerpt: ...
 post_image: /images/uploads/service-icon3.png
+autore: Ilenia
+categories: getting_started_for_admins
 tags:
   - technology
 ---
