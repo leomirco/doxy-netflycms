@@ -39,6 +39,8 @@ collections:
         pattern: front matter post
       - label: Featured
         field: featured
+      - label: Category
+        field: categories
         pattern: true
     view_groups:
       - label: Year
