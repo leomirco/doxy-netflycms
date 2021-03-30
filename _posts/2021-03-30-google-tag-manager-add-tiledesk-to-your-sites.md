@@ -31,6 +31,8 @@ Follow the steps below to create the account:\
 3. Choose a name for your account and click **Continue**.
 
    ![Add a new account](/images/uploads/tag-manager-entering-company-name-2x-1.jpg "Add a new account")
+
+
 4. Next, you need to setup a container. The container holds all your tags, such as Google Analytics tag, Adwords tag and Tiledesk tag. Name the container, select for Web option and click Create.
 
    ![Web option](/images/uploads/gtm-creating-a-container-2x-1.jpg "Web option")
@@ -67,7 +69,6 @@ Follow the steps below to create the account:\
 
    ![Rename your Tag](/images/uploads/gtm_tag_configuration_naming_tag-2x-1.png "Rename your Tag")
 9. To finalize adding Tiledesk to your site, you need to publish your container. Click on Publish button in the top right section of the screen to proceed.
-
 
    ![Publish button](/images/uploads/gtm_dashboard_publishing_tag-2x-1.png "Publish button")
 
