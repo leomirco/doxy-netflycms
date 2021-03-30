@@ -3,8 +3,8 @@ layout: post
 title: "Google Tag Manager: add Tiledesk to your sites"
 date: 2021-03-30T14:58:29.485Z
 featured: false
-draft: 0
-comment: 0
+draft: false
+comment: false
 excerpt: "Google Tag Manager: add Tiledesk to your sites"
 post_image: /images/uploads/service-icon3.png
 autore: Ilenia
@@ -73,4 +73,4 @@ Follow the steps below to create the account:\
 
 **Congratulations! You’ve added LiveChat using Google Tag Manager.**
 
-*To get a better idea of what Tiledesk can do for your business please contact us.*
+*To get a better idea of what Tiledesk can do for your business please contact us.*0
