@@ -8,6 +8,7 @@ comment: false
 excerpt: ...
 post_image: /images/uploads/service-icon3.png
 autore: Ilenia
+categories: getting_started_for_admins
 tags:
   - technology
 ---
