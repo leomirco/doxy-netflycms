@@ -5,7 +5,7 @@ date: 2021-03-31T16:21:35.587Z
 featured: false
 draft: false
 comment: false
-excerpt: ...
+excerpt: Create a Bot
 post_image: /images/uploads/service-icon3.png
 autore: Ilenia
 categories: getting_started_for_admins
