@@ -21,7 +21,7 @@ You need to create an account for each teammates (agents, administrators, etc.) 
 3. Enter the requested details:
 
    * **Email**: The email address the agent uses to log into the dashboard.
-   * **Role**: The Role assigned to the agent. You can choose between: Agent and Administrator. More info here [Understanding default roles](https://docs.tiledesk.com/knowledge-base/understanding-default-roles/)
+   * **Role**: The Role assigned to the agent. You can choose between: Agent and Administrator. More info here [Understanding default roles](https://docstiledesk.netlify.app/getting_started_for_admins/understanding-default-roles)
 
 ![Teammates and Groups](/images/uploads/image-3.png "Teammates and Groups")
 
