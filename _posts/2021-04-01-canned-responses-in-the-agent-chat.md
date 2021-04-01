@@ -16,13 +16,7 @@ Quick responses on live chat are crucial for customer satisfaction. That’s whe
 
 Canned responses are predefined responses that can be called during the chat. To use it in Tidio, you type “/” (forward slash) and follow it with a word or the first few letters of any word that is included in the response.
 
-
-
 ![Canned responses are predefined responses that can be called during the chat. ](/images/uploads/canned_response_2.gif "Canned responses are predefined responses that can be called during the chat. ")
-
-
-
-
 
 ## Adding canned responses
 
@@ -36,23 +30,15 @@ Here you can create new canned responses from scratch, edit existing ones, and d
 
 ![create new canned responses from scratch](/images/uploads/image-4.png "create new canned responses from scratch")
 
-
-
 ### Customizing the response
 
 You can also create a more engaging experience for your customers by using personalization in your message:
 
-1) When editing a message, you can insert a **personalization field** by first selecting the area in which you’d like to create the field.
+1. When editing a message, you can insert a **personalization field** by first selecting the area in which you’d like to create the field.
+2. Next, click the **ADD PERSONALIZATION** button
+3. Clicking the ADD PERSONALIZATION button will provide a list where you can select which personalization value you would like to add to your message.
 
-2) Next, click the **ADD PERSONALIZATION** button
-
-3) Clicking the ADD PERSONALIZATION button will provide a list where you can select which personalization value you would like to add to your message.
-
-![ADD PERSONALIZATION button](/images/uploads/image-6.png "ADD PERSONALIZATION button")
-
-
-
-
+![ADD PERSONALIZATION button](/images/uploads/image-66.png "ADD PERSONALIZATION button")
 
 ## Editing canned responses
 
@@ -66,8 +52,6 @@ Your replies can get old and out of date after some time. You can easily modify 
 * Click on Save changes to finish up.
 
 ![Editing canned responses](/images/uploads/image-7.png "Editing canned responses")
-
-
 
 ## Deleting canned responses
 
