@@ -8,7 +8,7 @@ comment: false
 excerpt: Browsing past chats in History
 post_image: /images/uploads/service-icon3.png
 autore: Ilenia
-categories: getting_started_for_admins
+categories: getting_started_for_agents
 tags:
   - functionality
   - chats history
