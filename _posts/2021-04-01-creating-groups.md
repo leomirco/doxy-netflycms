@@ -13,7 +13,7 @@ tags:
   - technology
 ---
 Use groups to organize support teams.\
-You can group agents based on skills and assign groups of agents to your [departments](https://docs.tiledesk.com/knowledge-base/creating-a-department/).
+You can group agents based on skills and assign groups of agents to your [departments](https://reverent-panini-e2d056.netlify.app/getting_started_for_admins/creating-a-department).
 
 To create a group of agents go to the dashboard sidebar and select **SETTINGS > USERS & GROUPS**.
 
@@ -22,7 +22,5 @@ To create a group of agents go to the dashboard sidebar and select **SETTINGS >
 Click on the “GROUPS” tab. With the “Add Group” button you can create the new group.
 
 ![Click on the “GROUPS” tab](/images/uploads/groups-tab.png "Click on the “GROUPS” tab")
-
-
 
 Now  you can proceed to add members to the group. Click ADD MEMBERS and select the agents to include them in the group.
