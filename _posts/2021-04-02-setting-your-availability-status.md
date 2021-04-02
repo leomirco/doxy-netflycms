@@ -10,7 +10,7 @@ post_image: /images/uploads/service-icon3.png
 autore: Andrea
 categories: getting_started_for_agents
 tags:
-  - Functionality
+  - functionality
   - Setting
   - Status
 ---
