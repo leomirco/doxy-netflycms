@@ -2,7 +2,7 @@
 layout: post
 title: How do invite a teammate
 date: 2021-03-31T16:44:57.343Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: How do invite a teammate
