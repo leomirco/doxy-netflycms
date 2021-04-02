@@ -2,7 +2,7 @@
 layout: post
 title: Create a Bot
 date: 2021-03-31T16:21:35.587Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: Create a Bot
