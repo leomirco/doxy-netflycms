@@ -27,16 +27,8 @@ Tiledesk will make every reasonable effort to ensure maximum availability of the
 
 Below are the target response times for a support case based on the customer’s Enterprise Plan type and support case severity level.
 
-**Severity	                           Short title	                                                          Response time**
-One (1)	                           Production System Down	                                  2 Business hour
-Two (2)	                           Production/Development – Major Impact	         4 Business hours
-Three (3)	                           Production/Development – Minor Impact	         1 Business day
-Four (4)	                          Question/How-to/Enhancement	                         2 Business day
+![Target response times for a support case](/images/uploads/schermata-da-2021-04-06-21-25-13.png "Target response times for a support case")
 
 Subsequent Service Level Target Response Times
 
-**Severity	                          Short title	                                                         Response time**
-One (1)	                          Production System Down	                                 Business hourly
-Two (2)	                          Production/Development – Major Impact	         Every two business days
-Three (3)	                          Production/Development – Minor Impact	         Every three business days
-Four (4)	                         Question/How-to/Enhancement	                         Every five business days
+![Subsequent Service Level Target Response Times](/images/uploads/schermata-da-2021-04-06-21-25-20.png "Service Level Target Response Times")
