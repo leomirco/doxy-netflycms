@@ -8,6 +8,7 @@ comment: false
 excerpt: Contacts and Leads
 post_image: /images/uploads/service-icon3.png
 autore: Andrea
+categories: managing_users
 tags:
   - functionality
   - Contacts
