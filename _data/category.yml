@@ -30,3 +30,8 @@ category:
     slug: developer_zone
     label: Developer zone
     url: /categories/developer_zone/
+  - draft: false
+    key: managing_users
+    label: Managing Users
+    slug: managing_users
+    url: /categories/managing_users/
