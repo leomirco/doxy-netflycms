@@ -35,3 +35,8 @@ category:
     label: Managing Users
     slug: managing_users
     url: /categories/managing_users/
+  - draft: true
+    key: chatbot
+    slug: chatbot
+    label: Chatbot
+    url: /categories/chatbot/
