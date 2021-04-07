@@ -37,9 +37,7 @@ Copy and paste this text in the *Responses* section of the “Talk to agent”
 
 The **\agent** keyword, at the end of the reply phrase, will never be shown to the enduser. It is an instruction for Tiledesk to switch the conversation to humans. As soon as Tiledesk see this instruction in the text it will remove the current chatbot (your chatbot) from the corresponding conversation and will try to invite a human, following the current department rules. If no agents are available the conversation will wait in the “unserved” queue until an agent becomes available again.
 
-To test the new “Talk to agent” intent we also place a button under every question (using [Microlanguage](https://docs.tiledesk.com/knowledge-base/response-bot-images-buttons-videos-and-more/)) to allow the user to ask for an agent after each reply. Let’s train, for instance, the *Default Welcome Intent* Intent to show this optional button (using *Microlanguage* you can easily add a button with **\*** symbol (starting a *new line*) followed by **one space** and the **button text**)
-
-
+To test the new “Talk to agent” intent we also place a button under every question (using [Microlanguage](https://docstiledesk.netlify.app/chatbot/resolution-bot-images-videos-buttons-and-more)) to allow the user to ask for an agent after each reply. Let’s train, for instance, the *Default Welcome Intent* Intent to show this optional button (using *Microlanguage* you can easily add a button with **\*** symbol (starting a *new line*) followed by **one space** and the **button text**)
 
 Hi! How are you doing? 
 
