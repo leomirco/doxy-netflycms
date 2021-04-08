@@ -2,7 +2,7 @@
 layout: post
 title: Service Level Targets (SLTs)
 date: 2021-04-06T17:27:02.961Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: Service Level Targets (SLTs)
@@ -10,8 +10,7 @@ post_image: /images/uploads/service-icon3.png
 autore: Ilenia
 categories: self_hosted
 tags:
-  - functi
-  - onality
+  - functionality
   - SLA
   - Support
 ---
