@@ -1,18 +1,19 @@
 ---
 layout: post
-title: "Resolution bot: images, videos, buttons and more prova"
+title: "Dialogflow connector: handling images, videos, buttons and more"
 date: 2021-04-08T13:24:40.298Z
 featured: false
 draft: false
 comment: false
-excerpt: "Resolution bot: images, videos, buttons and more"
+excerpt: "Dialogflow connector: handling images, videos, buttons and more"
 post_image: /images/uploads/service-icon3.png
 autore: Ilenia
 categories: chatbots
 tags:
   - functionality
-  - Resolution bot
+  - Dialogflow connector
   - Configuration
+  - Connector
 ---
 ![Resolution bot: images, videos, buttons ](/images/uploads/dialogflow-microlanguage-v2.png "Resolution bot: images, videos, buttons ")
 
@@ -28,7 +29,9 @@ You can generally use Microlanguage to increase the end-user experience, i.e. pr
 
 ## Microlanguage for Response bot
 
-Microlanguage is a set of special text commands (simple tags) that you can easily embed into your Response bot.
+As you probably already know, Dialogflow only integrates with mainstream chat channels like Telegram or Facebook Messenger. What if you want to support Tiledesk rich-messages that are not supported by Dialogflow? Here you can use Microlanguage.
+
+Microlanguage is a set of special text commands (simple tags) that you can embed into your Dialogflow agent reply messages without any knowledge of the [underlaying widget protocol](https://developer.tiledesk.com/widget/advanced/widget-json-protocol).
 
 For example, if you want to send an image to Tiledesk widget you can write a Answer like the following:
 
@@ -39,6 +42,24 @@ For example, if you want to send an image to Tiledesk widget you can write a Ans
 You will get on the Tiledesk Widget:
 
 ![image to Tiledesk widget ](/images/uploads/100596624-ac5f3480-32fc-11eb-9c15-1160d7d85204.png "image to Tiledesk widget ")
+
+The Tiledesk microlanguage pre-processor put between Dialogflow and Tiledesk (aka Dialogflow connector) will process this message, translating the microlanguage instruction *tdImage:IMAGE_URL* in the [corresponding widget protocol](https://developer.tiledesk.com/widget/advanced/widget-json-protocol#json-4):
+
+{ 
+
+type: "image", 
+
+text: "Hello, this is IETF.orf logo", 
+
+metadata = { 
+
+\    src: "https://www.ietf.org/media/images/ietf-logo.original.png" 
+
+\    }
+
+ }
+
+With Microlanguage it’s easy to overcome Dialogflow unawarness of Tiledesk widget technology sending feature-rich messages to your end-users.
 
 ## Supported commands
 
@@ -110,7 +131,7 @@ This will be rendered on the user widget as a couple of buttons.
 
 ![Text Buttons](/images/uploads/102227963-74eeab80-3eea-11eb-8df0-c6ccc16c23ce.png "Text Buttons")
 
-Generally *\*reply buttons\** are embedded in chatbots replies. Reply buttons allow users to reply with a proposed sentence already built by the sender (generally the chatbot). Pressing the button simply sends the sentence (the text contained in the button) to the recipient (most of the time the external chatbot) on the other side.
+Generally \*reply buttons\* are embedded in chatbots replies. Reply buttons allow users to reply with a proposed sentence already built by the sender (generally the chatbot). Pressing the button simply sends the sentence (the text contained in the button) to the recipient (most of the time the external chatbot) on the other side.
 
 ### Buttons – Syntax
 
@@ -163,34 +184,6 @@ You can specify if the target is another page or the same page where the widget 
 *\* Go to Tiledesk https://tiledesk.com*
 
 **NOTE**: There are 2 spaces between ‘Tiledesk’ and ‘[http://tiledesk.com](http://tiledesk.com/)‘.
-
-## **Action Buttons**
-
-You can use Action Buttons to allow custom communication to your chatbots. This means that you will not send to the remote chatbot webapp the button’s text but rather a hidden code (the action value) that identifies a specific action on the backend. You can use this kind of buttons to communicate some special action to the chatbot that not always depends by the text embedded in the button.
-
-With Microlanguage you always use the basic Button syntax, that renders a button, with the additional option **tdAction:ACTION-NAME**, placed right after the button text. This will render a special button that, when pressed, shows a special animation that indicates it as an “Action” button.
-
-### tdAction – Syntax
-
-This tag MUST be placed on the start of a newline.
-
-Action button syntax:
-
-*\* BUTTON TEXT tdAction:SPECIAL-ACTION*
-
-Example:
-
-*Vote for your president* 
-
-*\* Trump tdAction:VOTE-TRUMP* 
-
-*\* Biden tdAction:VOTE-BIDEN*
-
-**tdActionShowReply (Optional)**
-
-Default Action Button doesn’t show any text as “sent”. It simply “flashes”. If you want to send effectively a text (and the action) to your chatbot you can use the tdActionShowReply option (instead of tdAction) to effectively send the button text to your chatbot
-
-*\* BUTTON_TEXT tdActionShowReply:ACTION-CALLBACK-NAME*
 
 ## Frame
 
