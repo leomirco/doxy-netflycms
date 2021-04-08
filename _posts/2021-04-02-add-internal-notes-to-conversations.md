@@ -12,6 +12,7 @@ categories: getting_started_for_agents
 tags:
   - functionality
   - conversations
+  - Agent
 ---
 Add internal notes to conversations and discuss customer questions behind the scenes with teammates before replying.\
 Often a message needs to be seen by another member of your team. Maybe they’re better placed to answer it, or maybe you need their opinion before replying. You can add an internal note so a teammate get notified and directed to that conversation.
