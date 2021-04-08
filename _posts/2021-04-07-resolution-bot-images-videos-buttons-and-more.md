@@ -8,7 +8,7 @@ comment: false
 excerpt: "Resolution bot: images, videos, buttons and more"
 post_image: /images/uploads/service-icon3.png
 autore: Ilenia
-categories: chatbot
+categories: chatbots
 tags:
   - functionality
   - Resolution bot
