@@ -2,7 +2,7 @@
 layout: post
 title: Using Tiledesk Chat
 date: 2021-04-02T15:13:51.283Z
-featured: true
+featured: false
 draft: false
 comment: false
 excerpt: Responding to or initiating a chat with a visitor
@@ -11,7 +11,7 @@ autore: Andrea
 categories: getting_started_for_agents
 tags:
   - functionality
-  - Chat
+  - chat
   - Agent
 ---
 ## Responding to or initiating a chat with a visitor
