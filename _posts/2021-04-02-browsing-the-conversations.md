@@ -12,6 +12,7 @@ categories: getting_started_for_agents
 tags:
   - functionality
   - conversations
+  - Agent
 ---
 With the Conversations tab, you can see a real-time list of the active conversations of your project. It helps summarize all conversations information at a glance, including information about the visitors, their browser, operating system, location.
 
