@@ -2,7 +2,7 @@
 layout: post
 title: Whatsapp with Twilio
 date: 2021-04-06T14:26:43.344Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: Whatsapp with Twilio
