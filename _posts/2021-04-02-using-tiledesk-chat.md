@@ -2,7 +2,7 @@
 layout: post
 title: Using Tiledesk Chat
 date: 2021-04-02T15:13:51.283Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: Responding to or initiating a chat with a visitor
