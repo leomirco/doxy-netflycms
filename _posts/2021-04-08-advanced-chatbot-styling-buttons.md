@@ -2,7 +2,7 @@
 layout: post
 title: "Advanced chatbot styling: buttons"
 date: 2021-04-08T09:54:39.472Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: "Advanced chatbot styling: buttons"
