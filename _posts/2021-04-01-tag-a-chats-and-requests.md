@@ -10,7 +10,9 @@ post_image: /images/uploads/service-icon3.png
 autore: Ilenia
 categories: getting_started_for_admins
 tags:
-  - technology
+  - functionality
+  - Admin
+  - Chat
 ---
 Tags are labels that you add to chats and requests. They help you categorize and organize all customer communication in your Tiledesk account.
 
