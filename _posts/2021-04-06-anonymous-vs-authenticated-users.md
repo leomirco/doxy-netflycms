@@ -2,7 +2,7 @@
 layout: post
 title: Anonymous vs Authenticated users
 date: 2021-04-06T17:07:20.881Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: Anonymous vs Authenticated users
