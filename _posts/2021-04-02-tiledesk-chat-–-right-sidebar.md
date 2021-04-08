@@ -2,7 +2,7 @@
 layout: post
 title: Tiledesk Chat – Right sidebar
 date: 2021-04-02T14:20:41.454Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: Tiledesk Chat – Right sidebar
@@ -13,6 +13,7 @@ tags:
   - functionality
   - chat
   - sidebar
+  - Agent
 ---
 **Show the “info conversation” sidebar**
 
