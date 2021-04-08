@@ -11,6 +11,7 @@ autore: Ilenia
 categories: getting_started_for_admins
 tags:
   - functionality
+  - Admin
 ---
 You can specify how incoming chat requests are automatically distributed to your agents when they are all busy or when you are out of operating hours.
 
