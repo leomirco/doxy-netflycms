@@ -12,6 +12,7 @@ categories: getting_started_for_admins
 tags:
   - functionality
   - Triggers
+  - Admin
 ---
 Here is where all automation happensWith triggers you can execute custom actions based on events triggered by the platform, all without programming skills.
 
