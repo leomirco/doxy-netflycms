@@ -10,7 +10,8 @@ post_image: /images/uploads/service-icon3.png
 autore: Ilenia
 categories: getting_started_for_admins
 tags:
-  - technology
+  - functionality
+  - Admin
 ---
 Use groups to organize support teams.\
 You can group agents based on skills and assign groups of agents to your [departments](https://reverent-panini-e2d056.netlify.app/getting_started_for_admins/creating-a-department).
