@@ -11,7 +11,8 @@ post_image: /images/uploads/service-icon3.png
 autore: Andrea
 categories: self_hosted
 tags:
-  - technology
+  - functionality
+  - SaaS
 ---
 Self-Hosted packages are provided to offer the following advantages over the SaaS solution (Tiledesk Cloud):‌
 
