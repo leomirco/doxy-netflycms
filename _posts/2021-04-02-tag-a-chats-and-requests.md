@@ -12,6 +12,7 @@ categories: getting_started_for_agents
 tags:
   - functionality
   - chat
+  - Agent
 ---
 Tags are labels that you add to chats and requests. They help you categorize and organize all customer communication in your Tiledesk account.
 
