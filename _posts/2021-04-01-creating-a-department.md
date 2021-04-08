@@ -11,6 +11,7 @@ autore: Ilenia
 categories: getting_started_for_admins
 tags:
   - functionality
+  - Admin
 ---
 The departments allow you to efficiently route visitor’s requests to designated groups. This ensures that your visitor’s messages are always directed to the right agents.
 
