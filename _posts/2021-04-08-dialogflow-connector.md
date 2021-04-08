@@ -2,7 +2,7 @@
 layout: post
 title: Dialogflow Connector
 date: 2021-04-08T10:45:10.974Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: Dialogflow Connector
