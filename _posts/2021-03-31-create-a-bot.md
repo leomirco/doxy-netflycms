@@ -10,9 +10,11 @@ post_image: /images/uploads/service-icon3.png
 autore: Ilenia
 categories: getting_started_for_admins
 tags:
-  - technology
+  - functionality
+  - Admin
+  - Bot
 ---
-When a customer chats in through TileDesk, you may not always be around to respond. Luckily, you can configure a Bot to help you and then activates it in a [Department](http://edit.tiledesk.com/getting-started/getting-started-for-admins/creating-a-department/).
+When a customer chats in through TileDesk, you may not always be around to respond. Luckily, you can configure a Bot to help you and then activates it in a [Department](http://edit.tiledesk.com/getting-started/getting-started-for-admins/creating-a-department/).technology
 
 To create a Bot go to the dashboard sidebar and click **Settings > Bots**.
 
