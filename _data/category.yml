@@ -14,7 +14,7 @@ category:
     slug: chatbots
     label: Chatbots
     url: /categories/chatbots/
-    draft: false
+    draft: true
   - key: self_hosted
     slug: self_hosted
     label: Self hosted
