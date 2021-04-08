@@ -2,7 +2,7 @@
 layout: post
 title: “Self hosted” – Terms and Conditions
 date: 2021-04-06T17:19:45.698Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: “Self hosted” – Terms and Conditions
