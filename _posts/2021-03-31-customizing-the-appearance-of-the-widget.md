@@ -10,7 +10,9 @@ post_image: /images/uploads/service-icon3.png
 autore: Ilenia
 categories: getting_started_for_admins
 tags:
-  - technology
+  - functionality
+  - Admin
+  - Widget
 ---
 You can modify some or all of the following widget elements to match the look and feel of your company’s website.
 
