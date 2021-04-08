@@ -10,7 +10,8 @@ post_image: /images/uploads/service-icon3.png
 autore: Ilenia
 categories: getting_started_for_admins
 tags:
-  - technology
+  - functionality
+  - Admin
 ---
 You need to create an account for each teammates (agents, administrators, etc.) who will be responding to chats.
 
