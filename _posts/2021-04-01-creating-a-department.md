@@ -2,7 +2,7 @@
 layout: post
 title: Creating a department
 date: 2021-04-01T15:50:04.642Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: Creating a department

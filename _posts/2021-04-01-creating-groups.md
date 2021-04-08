@@ -2,7 +2,7 @@
 layout: post
 title: Creating groups
 date: 2021-04-01T11:41:31.707Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: Creating groups

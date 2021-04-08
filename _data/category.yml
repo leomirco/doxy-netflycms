@@ -14,12 +14,12 @@ category:
     slug: chatbots
     label: Chatbots
     url: /categories/chatbots/
-    draft: false
+    draft: true
   - key: self_hosted
     slug: self_hosted
     label: Self hosted
     url: /categories/managing_users/
-    draft: false
+    draft: true
   - key: integrations
     slug: integrations
     label: Integrations
@@ -30,3 +30,8 @@ category:
     slug: developer_zone
     label: Developer zone
     url: /categories/developer_zone/
+  - draft: true
+    key: managing_users
+    label: Managing Users
+    slug: managing_users
+    url: /categories/managing_users/

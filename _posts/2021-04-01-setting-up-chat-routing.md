@@ -2,7 +2,7 @@
 layout: post
 title: Setting up Chat Routing
 date: 2021-04-01T10:13:40.358Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: Setting up Chat Routing
