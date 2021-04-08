@@ -12,6 +12,7 @@ categories: getting_started_for_admins
 tags:
   - functionality
   - Operating
+  - Admin
 ---
 If a customer gets in touch outside of your office hours, the Tiledesk Bot will replies with a specific message (you can customize it under Widget setting):
 
