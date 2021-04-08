@@ -2,7 +2,7 @@
 layout: post
 title: Setting your availability status
 date: 2021-04-02T14:12:43.264Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: Setting your availability status
@@ -13,6 +13,7 @@ tags:
   - functionality
   - Setting
   - Status
+  - Agent
 ---
 When you’re logged into Tiledesk, you can set your status to any of the following:\
 • **Available**: Signifies you’re available to answer chats.\
