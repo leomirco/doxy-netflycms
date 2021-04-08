@@ -8,7 +8,7 @@ comment: false
 excerpt: Handoff to human agents
 post_image: /images/uploads/service-icon3.png
 autore: Andrea
-categories: chatbot
+categories: chatbots
 tags:
   - functionality
   - human agent
