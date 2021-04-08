@@ -10,7 +10,9 @@ post_image: /images/uploads/service-icon3.png
 autore: Ilenia
 categories: getting_started_for_admins
 tags:
-  - technology
+  - functionality
+  - Admin
+  - Chat
 ---
 After the creation of a project are enabled the routing default rules (Note: The default routings rules will be ignored if at least one department exists).
 
