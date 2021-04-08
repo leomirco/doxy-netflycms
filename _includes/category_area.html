@@ -13,7 +13,8 @@
                   {% if category_draft == "true" %}
                <article class="post topics-service bg-color3 wow fadeIn" data-wow-duration="3s">
                      <header class="topics-title">
-                     <h4 class="heading-4 text-capitalize">{{ category_label }} </h4> 
+                        {% assign all_posts = site.categories[category_name] %}
+                     <h4 class="heading-4 text-capitalize">{{ category_label }} ({{all_posts.size}})</h4> 
                      </header>
                      <ul class="topics-list list-inline">
                         {% assign evidence_posts = site.categories[category_name] | where: "featured", true %}
