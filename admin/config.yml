@@ -85,8 +85,8 @@ collections:
       - { label: "Immagine in primo piano", name: "post_image", widget: "image"}
       - { label: "Tags", name: "tags", widget: "string"}
       - { label: "Testo", name: "body", widget: "markdown" }
-      - { label: "Autore", name: "autore", widget: "relation", collection: "autori", file: "autori",  search_fields: ['autori.*.name'], value_field: 'autori.*.label', display_fields: ['autori.*.label'], multiple: false, required: false }
-      - { label: "Categoria", name: "categoria", widget: "relation", collection: "category", file: "category",  search_fields: ['category.*.label'], value_field: 'category.*.key', display_fields: ['category.*.label'], multiple: false, required: true }
+      - { label: "Autore", name: "autore", widget: "relation", collection: "config", file: "autori",  search_fields: ['autori.*.name'], value_field: 'autori.*.label', display_fields: ['autori.*.label'], multiple: false, required: false }
+      - { label: "Categorie", name: "categories", widget: "relation", collection: "config", file: "category",  search_fields: ['category.*.label'], value_field: 'category.*.key', display_fields: ['category.*.label'], multiple: false, required: false }
   # ATTENTO NON FUNZIONA
   - label: "Pages"
     name: "pages"
