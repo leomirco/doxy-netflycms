@@ -2,7 +2,7 @@
 layout: post
 title: Contacts and Leads
 date: 2021-04-06T16:42:04.043Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: Contacts and Leads
