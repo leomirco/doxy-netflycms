@@ -2,7 +2,7 @@
 layout: post
 title: Configure your first chatbot
 date: 2021-04-07T16:49:20.254Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: Configure your first chatbot
