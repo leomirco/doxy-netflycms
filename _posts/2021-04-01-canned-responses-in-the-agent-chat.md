@@ -10,7 +10,9 @@ post_image: /images/uploads/service-icon3.png
 autore: Ilenia
 categories: getting_started_for_admins
 tags:
-  - technology
+  - functionality
+  - Admin
+  - Chat
 ---
 Quick responses on live chat are crucial for customer satisfaction. That’s where **canned responses** come in handy. They help agents avoid delays and save them from typing the same answer over and over again.
 
