@@ -2,7 +2,7 @@
 layout: post
 title: Styling your chatbot replies
 date: 2021-04-08T08:33:31.122Z
-featured: false
+featured: true
 draft: false
 comment: false
 excerpt: Styling your chatbot replies
