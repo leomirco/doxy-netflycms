@@ -12,7 +12,7 @@ Tiledesk uses the [Chat21](http://www.chat21.org/) chat platform, an open so
 
 [Here](https://developer.tiledesk.com/architecture/schema) you can find a description of the current Architecture.
 
-![Tiledesk Architecture](/images/uploads/assets_-lz4-zelpfnjxhzk2q1s_-lp7ugv5dbdys9pwrp4d_-lp7uvkrwie1zvyv9bkx_tiledesk-architecture-design.001.jpeg "Tiledesk Architecture")
+![Tiledesk Architecture](/images/uploads/image-1888.png "Tiledesk Architecture")
 
 The blue frame, Chat21 server, is deployed on Firebase cloud, and is built using Firebase Realtime DB + Firebase Cloud functions.Every Client is connected through websockets with Chat21 Server. A mix of events on messages and webhook calls will synchronize Chat21 Server with Tiledesk server. All messages actually are stored on both platforms for different purposes.
 
