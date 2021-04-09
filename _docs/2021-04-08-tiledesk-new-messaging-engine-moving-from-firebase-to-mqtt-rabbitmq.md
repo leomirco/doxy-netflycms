@@ -5,6 +5,7 @@ date: 2021-04-08T19:59:55.237Z
 post_image: /images/uploads/image-1888.png
 tags: MQTT/RabbitMQ, messaging engine
 autore: Andrea
+categories: ""
 ---
 Actually Tiledesk uses [Firebase](https://firebase.google.com/) to deliver messages in real time between all the components of the platform (console, web widget, mobile apps etc.) that directly need to exchange messages.
 
