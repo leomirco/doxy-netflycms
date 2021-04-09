@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: Tiledesk new messaging engine, moving from Firebase to MQTT/RabbitMQ
 date: 2021-04-08T19:59:55.237Z
 post_image: /images/uploads/image-1888.png

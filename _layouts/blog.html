@@ -1,42 +1,46 @@
 ---
 layout: default
 ---
-{% include header.html %}
-   <!-- Start Page Title Area -->
-   {% capture bg-cover-custom_color %}{{site.data.header.custom_color}}{% endcapture %}
-   <section class="page-title-area bg-cover-custom" style="background-color: {{bg-cover-custom_color}}!important;">
-      <div class="page-title-wrapper section-spacing">
-         <div class="page-title text-center white-text">
-            <h2 class="heading-2">{{page.title}}</h2>
-            <ul class="page-title-meta list-inline">
-             {% if page.autore%}
-               <li class="list-inline-item"><img src="{{ '/assets/images/slider-author.png' | relative_url }}" alt="{{page.autore}}"><a href="{{page.autore_url}}">{{page.autore}}</a></li>
-              {% endif %}
-              {% if page.date %}
-               <li class="list-inline-item"><img src="{{ '/assets/images/slider-date.png' | relative_url }}" alt="{{page.date}}">{{page.date | date_to_long_string}}</li>
-              {% endif %}
-            </ul>
-         </div>
-      </div>
-   </section>
-   <!-- End Page Title Area -->
-   {% include doc_docs_breadcrumbs.html %}
-   <!-- Start Blog  Area -->
-   <section class="blog-area bg-color1">
-      <div class="blog-wrapper section-spacing bminus-30">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-7 col-lg-8">
-                  {% include post_loop.html %}
-               </div>
-               <div class="col-md-5 col-lg-4">
-                 {% include sidebar_cat_list.html %}
-                 {% include sidebar_new_post_list.html %}
-                 {% include nav.html %}
+  {% include header.html %}
+  {% include page_header.html %}
+  {% include doc_docs_breadcrumbs.html %}
+      <div class="blog-area bg-color1">
+         <div class="blog-wrapper section-spacing">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-7 col-lg-8 mx-auto"> 
+                   {% for doc in paginator.posts %}
+                     <article class="blog-post blog-spacing wow fadeIn" data-wow-duration="1s">
+                     	{% if doc.post_image %}
+                        <div class="blog-img">
+                           <a href="{{doc.url}}"><img src="{{doc.post_image}}" alt="{{doc.title}}"/></a>    
+                        </div>
+                        {% endif %}
+                        <div class="blog-content">
+                           <h3 class="heading-3"><a href="{{doc.url}}">{{doc.title}}</a></h3>
+                           <div class="post-excerpt">
+                              {{doc.content | truncatewords:30}}
+                           </div>
+                        </div>
+                        <ul class="blog-meta list-inline">
+                           {% if doc.autore %}
+                           <li class="list-inline-item"><img src="{{ '/assets/images/blog-author.png' | relative_url }}" alt="{{doc.title}}">
+                           	<a href="{{doc.autore_url}}">{{doc.autore}}</a></li>
+                           {% endif %}
+                           {% if doc.date %}
+                           <li class="list-inline-item"><img src="{{ '/assets/images/blog-date.png' | relative_url }}" alt="{{doc.title}}">{{doc.date | date_to_long_string}}</li>
+                           {% endif %}
+                        </ul>
+                     </article>
+                      {% endfor %}
+ {% include pagination.html %}
+                  </div>
+				     <div class="col-md-5 col-lg-4">
+               {% include sidebar_docs.html %}
+            </div>
+                
                </div>
             </div>
          </div>
       </div>
-   </section>
-   <!-- End Blog Area -->
 {% include footer_custom.html %}
