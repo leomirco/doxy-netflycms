@@ -6,7 +6,7 @@ backend:
   branch: master
 #ciao
 # when using the default proxy server port
-local_backend: false #--PRODUZIONE false
+local_backend: flase #--PRODUZIONE false
   #branch: master # Branch to update (optional; defaults to master)
 # This line should *not* be indented
 media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
@@ -51,8 +51,6 @@ collections:
         field: draft
       - label: Featured
         field: featured
-      - label: Category
-        field: categories
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Titolo", name: "title", widget: "string" }
