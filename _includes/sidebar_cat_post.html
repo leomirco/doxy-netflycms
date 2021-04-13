@@ -1,6 +1,8 @@
 <!--ELENCO NUOVI POST SULLA SPALLA A DX-->
 <div class="sidebar-area sidebar-right">
-<h5 class="sub-title heading-5">Category post: {{page.categories}}</h5>
+{% assign category_name = site.data.category.category | where: "key", "getting_started_for_admins"  %}
+{% capture category_label %}{{ category_name[0].label}}{% endcapture %}
+<h5 class="sub-title heading-5">Category post: {{category_label}}</h5>
 <div class="recent-widget sidebar-widget">
   {% capture category_key %}{{page.categories}}{% endcapture %}
   {% assign all_posts = site.categories[category_key] %}
