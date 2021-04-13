@@ -121,7 +121,7 @@ pagination:
   category: 'posts'
 
   # Optional, the default tag to use, omit to disable
-  tag: ''
+  tag: 'funzionality'
 
   # Optional, the default locale to use, omit to disable (depends on a field 'locale' to be specified in the posts, 
   # in reality this can be any value, suggested are the Microsoft locale-codes (e.g. en_US, en_GB) or simply the ISO-639 language code )
