@@ -77,7 +77,7 @@ collections:
     # filtro della collezione
     #filter: {field: "language", value: "it"}
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog2" }
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Data di pubblicazione", name: "date", widget: "datetime" }
       - { label: "Immagine in primo piano", name: "post_image", widget: "image"}

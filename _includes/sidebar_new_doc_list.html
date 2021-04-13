@@ -1,8 +1,8 @@
-<!--ELENCO NUOVI BLOG SULLA SPALLA A DX-->
+<!--ELENCO NUOVI POST SULLA SPALLA A DX-->
 <div class="sidebar-area sidebar-right">
 <h5 class="sub-title heading-5">Latest blog post</h5>
 <div class="recent-widget sidebar-widget">
-  {% for doc in site.docs limit:8 %}
+  {% for doc in site.docs limit:5 %}
    <div class="recent-wrapper">
       <a class="recent-img">
       <img src="{{doc.post_image | relative_url}}" alt="{{doc.title}}">
@@ -16,18 +16,4 @@
    </div>
   {% endfor %}
 </div>
-<!--
-<h5 class="sub-title heading-5">Tags</h5>
-<div class="tag-widget sidebar-widget list-inline">
-   {% assign tags = site.tags | sort %}
-{% for tag in tags %}
- <span class="site-tag">
-    <a href="{{ "/" | relative_url }}/tag/{{ tag | first | slugify }}/"
-        style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-    </a>
-</span>
-{% endfor %}
-</div>
--->
 </div>
