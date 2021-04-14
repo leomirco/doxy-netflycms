@@ -3,7 +3,7 @@ layout: blog2
 title: We have a new technical staff member. Yes, he is a chatbot
 date: 2021-04-14T16:17:23.111Z
 post_image: /images/uploads/chatbot_vf.png
-tags: Chatbot
+tags: Chatbot, Dialogflow, Faqbot, News, Web Widget
 autore: Andrea
 ---
 Techy is tiledesk’s technical staff bot and he will be very happy to reply to your questions!
