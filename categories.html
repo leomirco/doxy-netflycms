@@ -13,7 +13,7 @@ keywords: "responsive,jekyll,minimal template"
                   {% capture category_name %}{{ category.key}}{% endcapture %}
                   {% capture category_label %}{{ category.label}}{% endcapture %}
                     {% capture category_draft %}{{ category.draft}}{% endcapture %}
-                    {% if category_draft == "true" %}
+                    {% if category_draft == "false" %}
                      <div class="row">
                         <article class="topics-service bg-color3 wow fadeIn" data-wow-duration="3s">
                            <header class="topics-title">

@@ -21,7 +21,7 @@ collections:
     label: "Posts"
     label_singular: 'Post' # Used in the UI, ie: "New Post"
     description: >
-      Elenco dei Posts creati per l'Help Center.
+     Help Center Posts
     folder: "_posts/"
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -69,6 +69,9 @@ collections:
   # DOCS 
   - name: "docs"
     label: "Blog"
+    label_singular: 'Blog' # Used in the UI, ie: "New Post"
+    description: >
+      Help Center Blog
     folder: "_docs/"
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -88,6 +91,9 @@ collections:
   # ATTENTO NON FUNZIONA
   - label: "Pages"
     name: "pages"
+    label_singular: 'Page' # Used in the UI, ie: "New Post"
+    description: >
+      Help Center Pages
     files:
       - label: "Contact"
         name: "contact"
@@ -115,7 +121,9 @@ collections:
       #        - { label: Designation, name: designation, widget: string }
       #        - { label: Url, name: url, widget: string }
   - name: "config"
-    label: "Configurazione del sito"
+    label: "Help Center Configuration"
+    description: >
+      Configure your Help Center
     editor:
       preview: false
     files:
@@ -215,7 +223,7 @@ collections:
             widget: "list"
             fields:
               - { label: Key, name: key, widget: string }
-              - { label: Slug, name: slug, widget: string }
+              - { label: Slug, name: slug, widget: hidden }
               - { label: Nome, name: label, widget: string }
               - { label: Url, name: url, widget: string }
               - { label: "Draft", name: "draft", widget: "boolean", default: false }
