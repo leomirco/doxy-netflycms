@@ -195,7 +195,7 @@ collections:
         fields:
           - { label: Titolo, name: title, widget: string, required: false}
           - { label: Sottotitolo, name: subtitle, widget: string, required: false }
-          - { label: Facebook, name: behance, widget: string, required: false}
+          - { label: Facebook, name: facebook, widget: string, required: false}
           - { label: Twitter, name: twitter, widget: string, required: false }
           - { label: Instagram, name: instagram, widget: string, required: false }
           - { label: Github, name: github, widget: string, required: false }
