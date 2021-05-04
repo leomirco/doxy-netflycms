@@ -70,6 +70,10 @@
                             {% if github != "" %}
                                 <li class="list-inline-item"><a href="{{github}}"><i class="fa fa-github"></i></a></li>
                             {% endif %}
+                            {% capture youtube %}{{site.data.footer.youtube}}{% endcapture %}
+                            {% if youtube != "" %}
+                                <li class="list-inline-item"><a href="{{youtube}}" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                            {% endif %}
                         </ul>
                     </div>
                 </div>
