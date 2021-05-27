@@ -1,5 +1,6 @@
 <!-- Start Footer Area -->
-<footer class="footer-area bg-color3">
+{% capture bg-color3-custom %}{{site.data.footer.custom_color}}{% endcapture %}
+<footer class="footer-area bg-color3" style="background-color: {{bg-color3-custom}}!important;">
     <div class="footer-wrapper section-spacing bminus-30">
         <div class="container">
             <div class="row">
@@ -74,8 +75,30 @@
                             {% if youtube != "" %}
                                 <li class="list-inline-item"><a href="{{youtube}}" target="_blank"><i class="fa fa-youtube"></i></a></li>
                             {% endif %}
+                            {% capture website %}{{site.data.footer.website}}{% endcapture %}
+                            {% if website != "" %}
+                                <li class="list-inline-item"><a href="{{website}}" target="_blank"><i class="fa fa-internet-explorer"></i></a></li>
+                            {% endif %}
                         </ul>
                     </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <script type="application/javascript">
+                        var tiledesk_id = "{{site.data.tiledesk.id | json}}";
+                        window.tiledeskSettings = 
+                        {
+                        projectid: tiledesk_id
+                        };
+                        (function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id; js.async=true;
+                        js.src = "https://widget.tiledesk.com/v4/launch.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                        //alert("stringa concatenata con " + js.id);
+                        //alert("tiledesk id " + {{site.data.tiledesk.id}});
+                        }(document, 'script', 'tiledesk-jssdk'));
+                       </script>
                 </div>
             </div>
         </div>

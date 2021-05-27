@@ -1,3 +1,4 @@
 favicon_url: /images/uploads/favicon.png
 logo_url: /images/uploads/logo-deep-linking-tiledesk.png
 custom_color: "#33b4f0"
+robots: index

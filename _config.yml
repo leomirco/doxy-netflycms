@@ -55,6 +55,7 @@ toc:
 # Build settings
 markdown: kramdown
 theme: minima
+url: "http://127.0.0.1/" # the base hostname & protocol for your site
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
@@ -62,6 +63,7 @@ plugins:
   - jekyll-toc
   - jekyll-seo-tag
   - jekyll-include-cache
+  - jekyll-sitemap
 
 collections:
   team_members:
@@ -182,6 +184,10 @@ jekyll-archives:
       type: category
     values:
       comments: false
+  - scope:
+      path:            "*.*"
+    values:
+      sitemap:         false
 
 # JEKYLL-ARCHIVES FINE
 
